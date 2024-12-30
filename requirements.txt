@@ -8,6 +8,7 @@ opencv_python_headless==4.9.0.80
 python-dotenv==1.0.1
 pytubefix
 torch
+pytube==15.0.0
 webrtcvad-wheels
 pydub
 openai==1.44.1

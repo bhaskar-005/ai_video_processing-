@@ -1,5 +1,5 @@
 import os
-from pytubefix import YouTube
+from pytube import YouTube
 import ffmpeg
 
 def get_video_size(stream):
