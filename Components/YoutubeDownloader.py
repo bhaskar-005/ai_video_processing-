@@ -8,7 +8,7 @@ def get_video_size(stream):
 
 def download_youtube_video(url):
     try:
-        yt = YouTube(url)
+        yt = YouTube(url, use_po_token=True)
 
         video_streams = yt.streams.filter(type="video").order_by('resolution').desc()
         audio_stream = yt.streams.filter(only_audio=True).first()
