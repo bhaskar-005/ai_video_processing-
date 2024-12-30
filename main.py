@@ -4,6 +4,7 @@ from Components.Transcription import transcribeAudio
 from Components.LanguageTasks import GetHighlight
 from Components.FaceCrop import crop_to_vertical, combine_videos
 import os
+import platform
 import subprocess
 import sys
 
@@ -16,63 +17,45 @@ def install_package(package):
         print(f"Failed to install {package}: {e}")
 
 def install_ffmpeg():
-    """Download and install FFmpeg automatically."""
-    import platform
-    import shutil
-    import urllib.request
-    import zipfile
-
-    # Determine the OS
+    """Install FFmpeg using system-specific commands."""
     system = platform.system().lower()
-    ffmpeg_url = ""
-
-    if system == "windows":
-        ffmpeg_url = "https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-essentials.zip"
-    elif system == "darwin":  # macOS
-        ffmpeg_url = "https://evermeet.cx/ffmpeg/ffmpeg.zip"
-    elif system == "linux":
-        ffmpeg_url = "https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz"
-    else:
-        print("Unsupported OS for automatic FFmpeg installation.")
-        return
 
     try:
-        # Download FFmpeg
-        print("Downloading FFmpeg...")
-        ffmpeg_archive = "ffmpeg_download"
-        urllib.request.urlretrieve(ffmpeg_url, ffmpeg_archive)
+        if "linux" in system:
+            print("Installing FFmpeg on Linux...")
+            # Install using APT for Debian/Ubuntu or YUM for RHEL-based distros
+            if os.path.exists("/etc/debian_version"):
+                subprocess.check_call(["sudo", "apt-get", "update"])
+                subprocess.check_call(["sudo", "apt-get", "install", "-y", "ffmpeg"])
+            elif os.path.exists("/etc/redhat-release"):
+                subprocess.check_call(["sudo", "yum", "install", "-y", "epel-release"])
+                subprocess.check_call(["sudo", "yum", "install", "-y", "ffmpeg"])
+            else:
+                raise Exception("Unsupported Linux distribution.")
+            print("FFmpeg installed successfully on Linux!")
 
-        # Extract FFmpeg
-        print("Extracting FFmpeg...")
-        if ffmpeg_url.endswith(".zip"):
-            with zipfile.ZipFile(ffmpeg_archive, "r") as zip_ref:
-                zip_ref.extractall("ffmpeg")
-        elif ffmpeg_url.endswith(".xz"):
-            import tarfile
-            with tarfile.open(ffmpeg_archive, "r:xz") as tar_ref:
-                tar_ref.extractall("ffmpeg")
+        elif "windows" in system:
+            print("Installing FFmpeg on Windows...")
+            # Download FFmpeg zip and extract
+            ffmpeg_url = "https://www.gyan.dev/ffmpeg/builds/ffmpeg-release-essentials.zip"
+            subprocess.check_call(["powershell", "-Command", f"Invoke-WebRequest -Uri {ffmpeg_url} -OutFile ffmpeg.zip"])
+            subprocess.check_call(["powershell", "-Command", "Expand-Archive -Path ffmpeg.zip -DestinationPath C:\\ffmpeg -Force"])
+            ffmpeg_bin = r"C:\ffmpeg\bin"
+            os.environ["PATH"] += os.pathsep + ffmpeg_bin
+            print(f"FFmpeg installed successfully! Make sure `{ffmpeg_bin}` is added to your system PATH.")
 
-        # Move FFmpeg binary to PATH
-        ffmpeg_dir = os.path.join("ffmpeg", "ffmpeg") if system == "darwin" else "ffmpeg"
-        ffmpeg_bin = os.path.join(ffmpeg_dir, "bin", "ffmpeg") if os.path.exists(os.path.join(ffmpeg_dir, "bin")) else os.path.join(ffmpeg_dir, "ffmpeg")
+        elif "darwin" in system:  # macOS
+            print("Installing FFmpeg on macOS...")
+            # Install using Homebrew
+            subprocess.check_call(["brew", "install", "ffmpeg"])
+            print("FFmpeg installed successfully on macOS!")
 
-        # Move to a directory in PATH (e.g., /usr/local/bin or ~/.local/bin)
-        target_dir = os.path.expanduser("~/.local/bin")
-        os.makedirs(target_dir, exist_ok=True)
-        shutil.move(ffmpeg_bin, os.path.join(target_dir, "ffmpeg"))
-        print("FFmpeg installed successfully!")
-
-        # Add FFmpeg to PATH
-        os.environ["PATH"] += os.pathsep + target_dir
-        print("FFmpeg has been added to PATH.")
+        else:
+            raise Exception("Unsupported operating system.")
+    except subprocess.CalledProcessError as e:
+        print(f"Error installing FFmpeg: {e}")
     except Exception as e:
-        print(f"Failed to install FFmpeg: {e}")
-    finally:
-        # Cleanup
-        if os.path.exists(ffmpeg_archive):
-            os.remove(ffmpeg_archive)
-        if os.path.exists("ffmpeg"):
-            shutil.rmtree("ffmpeg")
+        print(f"Installation failed: {e}")
 
 
 # Install Python packages
