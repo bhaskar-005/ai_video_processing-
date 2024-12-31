@@ -25,11 +25,11 @@ def install_ffmpeg():
             print("Installing FFmpeg on Linux...")
             # Install using APT for Debian/Ubuntu or YUM for RHEL-based distros
             if os.path.exists("/etc/debian_version"):
-                subprocess.check_call(["sudo", "apt-get", "update"])
-                subprocess.check_call(["sudo", "apt-get", "install", "-y", "ffmpeg"])
+                subprocess.check_call([ "apt-get", "update"])
+                subprocess.check_call([ "apt-get", "install", "-y", "ffmpeg"])
             elif os.path.exists("/etc/redhat-release"):
-                subprocess.check_call(["sudo", "yum", "install", "-y", "epel-release"])
-                subprocess.check_call(["sudo", "yum", "install", "-y", "ffmpeg"])
+                subprocess.check_call([ "yum", "install", "-y", "epel-release"])
+                subprocess.check_call([ "yum", "install", "-y", "ffmpeg"])
             else:
                 raise Exception("Unsupported Linux distribution.")
             print("FFmpeg installed successfully on Linux!")
