@@ -57,7 +57,7 @@ def health_check():
     return jsonify({"status": "ok", "message": "The server is running!"}), 200
 
 # Main logic
-@app.route('/process', methods=['POST'])
+@app.route('/process', methods=['GET'])
 def process_video():
     url = "https://www.youtube.com/watch?v=MiA-DsGumxQ&pp=ygURM21pbiBwb2RjYXN0IGNsaXA%3D"
     Vid = download_youtube_video(url)
