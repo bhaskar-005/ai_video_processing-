@@ -1,3 +1,4 @@
+from flask import Flask, jsonify
 from Components.YoutubeDownloader import download_youtube_video
 from Components.Edit import extractAudio, crop_video
 from Components.Transcription import transcribeAudio
@@ -8,6 +9,8 @@ import urllib.request
 import tarfile
 import subprocess
 import sys
+
+app = Flask(__name__)
 
 def install_package(package):
     """Install a Python package using pip."""
@@ -41,7 +44,6 @@ def install_ffmpeg():
         print(f"Failed to install FFmpeg: {e}")
 
 
-
 # Install Python packages
 install_package("pytube")
 install_package("ffmpeg-python")
@@ -49,38 +51,51 @@ install_package("ffmpeg-python")
 install_ffmpeg()
 print("All dependencies are installed/updated!")
 
-url = "https://www.youtube.com/watch?v=MiA-DsGumxQ&pp=ygURM21pbiBwb2RjYXN0IGNsaXA%3D"
-Vid= download_youtube_video(url)
-if Vid:
-    Vid = Vid.replace(".webm", ".mp4")
-    print(f"Downloaded video and audio files successfully! at {Vid}")
+# Health check route
+@app.route('/health', methods=['GET'])
+def health_check():
+    return jsonify({"status": "ok", "message": "The server is running!"}), 200
 
-    Audio = extractAudio(Vid)
-    if Audio:
+# Main logic
+@app.route('/process', methods=['POST'])
+def process_video():
+    url = "https://www.youtube.com/watch?v=MiA-DsGumxQ&pp=ygURM21pbiBwb2RjYXN0IGNsaXA%3D"
+    Vid = download_youtube_video(url)
+    if Vid:
+        Vid = Vid.replace(".webm", ".mp4")
+        print(f"Downloaded video and audio files successfully! at {Vid}")
 
-        transcriptions = transcribeAudio(Audio)
-        if len(transcriptions) > 0:
-            TransText = ""
+        Audio = extractAudio(Vid)
+        if Audio:
 
-            for text, start, end in transcriptions:
-                TransText += (f"{start} - {end}: {text}")
+            transcriptions = transcribeAudio(Audio)
+            if len(transcriptions) > 0:
+                TransText = ""
 
-            start , stop = GetHighlight(TransText)
-            if start != 0 and stop != 0:
-                print(f"Start: {start} , End: {stop}")
+                for text, start, end in transcriptions:
+                    TransText += (f"{start} - {end}: {text}")
 
-                Output = "Out.mp4"
+                start, stop = GetHighlight(TransText)
+                if start != 0 and stop != 0:
+                    print(f"Start: {start} , End: {stop}")
 
-                crop_video(Vid, Output, start, stop)
-                croped = "croped.mp4"
+                    Output = "Out.mp4"
 
-                crop_to_vertical("Out.mp4", croped)
-                combine_videos("Out.mp4", croped, "Final.mp4")
+                    crop_video(Vid, Output, start, stop)
+                    cropped = "cropped.mp4"
+
+                    crop_to_vertical("Out.mp4", cropped)
+                    combine_videos("Out.mp4", cropped, "Final.mp4")
+                else:
+                    return jsonify({"error": "Error in getting highlight"}), 500
             else:
-                print("Error in getting highlight")
+                return jsonify({"error": "No transcriptions found"}), 500
         else:
-            print("No transcriptions found")
+            return jsonify({"error": "No audio file found"}), 500
     else:
-        print("No audio file found")
-else:
-    print("Unable to Download the video")
+        return jsonify({"error": "Unable to download the video"}), 500
+
+    return jsonify({"message": "Processing complete!"}), 200
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000)
