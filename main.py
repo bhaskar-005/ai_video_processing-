@@ -9,10 +9,19 @@ import urllib.request
 import tarfile
 import subprocess
 import sys
+import logging
+import time
 
 app = Flask(__name__)
 
 VIDEO_DIR = os.path.join(os.path.dirname(__file__), "videos")
+
+# Configure the logging system
+logging.basicConfig(
+    filename='app.log',       # Log file where we store the captured output
+    level=logging.INFO,       # Minimum level of logs to capture
+    format='%(asctime)s - %(levelname)s - %(message)s'  # Log format
+)
 
 def install_package(package):
     """Install a Python package using pip."""
@@ -52,6 +61,32 @@ install_package("ffmpeg-python")
 # Install FFmpeg
 install_ffmpeg()
 print("All dependencies are installed/updated!")
+
+print("test log store")
+
+class PrintCapture:
+    def write(self, message):
+        if message != '\n':  # To ignore empty lines
+            logging.info(message)
+
+    def flush(self):
+        pass
+
+# Redirecting stdout to capture all print statements
+sys.stdout = PrintCapture()
+
+@app.route('/logs', methods=['GET'])
+def get_logs():
+    try:
+        # Open the log file and read its content
+        with open('app.log', 'r') as file:
+            logs = file.readlines()
+
+        # Return logs as a JSON response
+        return jsonify({"logs": logs})
+
+    except Exception as e:
+        return jsonify({"error": f"Could not read logs: {str(e)}"}), 500
 
 @app.route('/videos', methods=['GET'])
 def list_video_names():
@@ -113,7 +148,7 @@ def process_video():
 
         Audio = extractAudio(Vid)
         if Audio:
-
+            print(Audio)
             transcriptions = transcribeAudio(Audio)
             if len(transcriptions) > 0:
                 TransText = ""
@@ -143,6 +178,6 @@ def process_video():
 
     return jsonify({"message": "Processing complete!"}), 200
 
-
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
+    process_video()
