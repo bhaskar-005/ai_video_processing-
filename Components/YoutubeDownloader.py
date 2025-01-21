@@ -1,37 +1,36 @@
 import os
-from pytube import YouTube
+from pytubefix import YouTube
 import ffmpeg
 
 def get_video_size(stream):
 
     return stream.filesize / (1024 * 1024)
 
-def download_youtube_video(url):
+def download_youtube_video(url, resolution):
     try:
         yt = YouTube(url)
         print("----------------------") 
         print(yt,"youtube data") 
         print("----------------------") 
         
-        video_streams = yt.streams.filter(type="video").order_by('resolution').desc()
+        video_streams = yt.streams.filter(res=resolution, type="video").first()
         audio_stream = yt.streams.filter(only_audio=True).first()
 
-        print("Available video streams:")
-        for i, stream in enumerate(video_streams):
-            size = get_video_size(stream)
-            stream_type = "Progressive" if stream.is_progressive else "Adaptive"
-            print(f"{i}. Resolution: {stream.resolution}, Size: {size:.2f} MB, Type: {stream_type}")
-
-        choice = int(input("Enter the number of the video stream to download: "))
-        selected_stream = video_streams[choice]
+        if not video_streams:
+            print(f"No video streams found with resolution {resolution}.")
+            return
 
         if not os.path.exists('videos'):
             os.makedirs('videos')
 
         print(f"Downloading video: {yt.title}")
-        video_file = selected_stream.download(output_path='videos', filename_prefix="video_")
-
-        if not selected_stream.is_progressive:
+        video_file = video_streams.download(output_path='videos', filename_prefix="video_")
+        print("----------------------") 
+        print(video_streams.is_progressive)
+        print("----------------------") 
+        print(video_streams)
+        print("----------------------") 
+        if not video_streams.is_progressive:
             print("Downloading audio...")
             audio_file = audio_stream.download(output_path='videos', filename_prefix="audio_")
 
