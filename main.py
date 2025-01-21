@@ -60,7 +60,10 @@ def health_check():
 @app.route('/process', methods=['GET'])
 def process_video():
     url = "https://www.youtube.com/watch?v=MiA-DsGumxQ&pp=ygURM21pbiBwb2RjYXN0IGNsaXA%3D"
+    print(url)
+    print("starting video download...")
     Vid = download_youtube_video(url)
+    print("donload status",Vid)
     if Vid:
         Vid = Vid.replace(".webm", ".mp4")
         print(f"Downloaded video and audio files successfully! at {Vid}")
