@@ -1,6 +1,25 @@
 import os
 from pytubefix import YouTube
 import ffmpeg
+import subprocess
+
+def generate_po_token():
+    try:
+        result = subprocess.run(
+            ["python", "generate_token.py"],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True
+        )
+        if result.returncode == 0:
+            token = result.stdout.strip()
+            return token
+        else:
+            print("Error generating PO Token:", result.stderr)
+            return None
+    except Exception as e:
+        print(f"An error occurred while generating PO Token: {e}")
+        return None
 
 def get_video_size(stream):
 
@@ -8,7 +27,13 @@ def get_video_size(stream):
 
 def download_youtube_video(url, resolution):
     try:
-        yt = YouTube(url, use_po_token=True)
+        po_token = generate_po_token()
+        if not po_token:
+            print("Failed to generate PO Token. Aborting...")
+            return
+        
+
+        yt = YouTube(url, po_token=po_token)
         print("----------------------") 
         print(yt,"youtube data") 
         print("----------------------") 
