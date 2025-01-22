@@ -8,7 +8,7 @@ def get_video_size(stream):
 
 def download_youtube_video(url, resolution):
     try:
-        yt = YouTube(url)
+        yt = YouTube(url, use_po_token=True)
         print("----------------------") 
         print(yt,"youtube data") 
         print("----------------------") 
