@@ -11,6 +11,7 @@ import subprocess
 import sys
 import logging
 import time
+import platform
 
 app = Flask(__name__)
 
@@ -54,12 +55,46 @@ def install_ffmpeg():
     except Exception as e:
         print(f"Failed to install FFmpeg: {e}")
 
+def setup_libgl():
+    """
+    Downloads and sets up libGL.so.1 for environments where it is missing.
+    """
+    try:
+        # Determine system architecture
+        arch = platform.architecture()[0]
+        if "64" in arch:
+            libgl_url = "http://security.ubuntu.com/ubuntu/pool/main/libg/libglvnd/libgl1_1.3.2-1~ubuntu20.04.2_amd64.deb"
+        else:
+            libgl_url = "http://security.ubuntu.com/ubuntu/pool/main/libg/libglvnd/libgl1_1.3.2-1~ubuntu20.04.2_i386.deb"
 
+        libgl_deb = "libgl1.deb"
+        extract_dir = os.path.join(os.getcwd(), "libgl")
+
+        # Download the .deb package
+        print(f"Downloading libGL from {libgl_url}...")
+        urllib.request.urlretrieve(libgl_url, libgl_deb)
+        print("libGL downloaded successfully!")
+
+        # Extract the .deb package
+        os.makedirs(extract_dir, exist_ok=True)
+        subprocess.run(["dpkg-deb", "-x", libgl_deb, extract_dir], check=True)
+
+        # Locate and add the library path to LD_LIBRARY_PATH
+        lib_path = os.path.join(extract_dir, "usr/lib/x86_64-linux-gnu")
+        os.environ["LD_LIBRARY_PATH"] = f"{os.environ.get('LD_LIBRARY_PATH', '')}:{lib_path}"
+
+        print(f"libGL.so.1 installed successfully and set up at {lib_path}!")
+
+        return True
+    except Exception as e:
+        print(f"Error setting up libGL.so.1: {str(e)}")
+        return False
 # Install Python packages
 install_package("pytube")
 install_package("ffmpeg-python")
 # Install FFmpeg
 install_ffmpeg()
+setup_libgl()
 print("All dependencies are installed/updated!")
 
 print("test log store")
