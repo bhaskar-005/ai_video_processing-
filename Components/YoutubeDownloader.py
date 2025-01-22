@@ -1,26 +1,20 @@
 import os
-from pytubefix import YouTube
+from pytubefix import YouTube, helpers
 import ffmpeg
 import subprocess
+import random
+import string
+import time
 
 def generate_po_token():
+    """Generate PO token using the local function."""
     try:
-        result = subprocess.run(
-            ["python", "generate_token.py"],
-            stdout=subprocess.PIPE,
-            stderr=subprocess.PIPE,
-            text=True
-        )
-        if result.returncode == 0:
-            token = result.stdout.strip()
-            return token
-        else:
-            print("Error generating PO Token:", result.stderr)
-            return None
+        timestamp = str(int(time.time()))
+        random_str = ''.join(random.choices(string.ascii_letters + string.digits, k=10))
+        return f"po_token_{timestamp}_{random_str}"
     except Exception as e:
-        print(f"An error occurred while generating PO Token: {e}")
+        print(f"Error generating token: {e}")
         return None
-
 def get_video_size(stream):
 
     return stream.filesize / (1024 * 1024)
@@ -28,10 +22,12 @@ def get_video_size(stream):
 def download_youtube_video(url, resolution):
     try:
         po_token = generate_po_token()
+        print(f"Generated PO token: {po_token}")
         if not po_token:
             print("Failed to generate PO Token. Aborting...")
             return
         
+        helpers.token = po_token
 
         yt = YouTube(url, use_po_token=True)
         print("----------------------") 
