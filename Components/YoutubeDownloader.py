@@ -33,7 +33,7 @@ def download_youtube_video(url, resolution):
             return
         
 
-        yt = YouTube(url, po_token=po_token)
+        yt = YouTube(url, use_po_token=True)
         print("----------------------") 
         print(yt,"youtube data") 
         print("----------------------") 
