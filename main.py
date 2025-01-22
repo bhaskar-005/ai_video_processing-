@@ -44,8 +44,8 @@ def setup_libgl():
         os_name = platform.system()
         if os_name == "Linux":
             print("Installing libGL on Linux...")
-            subprocess.run([ "apt-get", "update"], check=True)
-            subprocess.run(["apt-get", "install", "-y", "libgl1"], check=True)
+            subprocess.run([ "sudo", "apt-get", "update"], check=True)
+            subprocess.run(["sudo", "apt-get", "install", "-y", "libgl1"], check=True)
         elif os_name == "Windows":
             print("Windows detected. Please install libGL manually or use a compatible method.")
             # Add Windows-specific instructions if needed
