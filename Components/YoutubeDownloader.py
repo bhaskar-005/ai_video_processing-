@@ -36,9 +36,10 @@ def try_ytdlp_download(url: str, resolution: str = "720"):
 
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
             print("Starting yt-dlp download...")
-            ydl.download([url])
-            print("yt-dlp download completed successfully!")
-            return True
+            info_dict = ydl.extract_info(url, download=True)
+            output_file = ydl.prepare_filename(info_dict)
+            print(f"yt-dlp download completed successfully! File: {output_file}")
+            return output_file
 
     except Exception as e:
         print(f"yt-dlp download failed: {str(e)}")
@@ -98,14 +99,15 @@ def download_youtube_video(url, resolution="720"):
     """Main function to download a YouTube video, trying yt-dlp first, then pytubefix."""
     try:
         # Try downloading with yt-dlp
-        if try_ytdlp_download(url, resolution):
-            return "Download completed with yt-dlp"
+        yt_dlp_file = try_ytdlp_download(url, resolution)
+        if yt_dlp_file:
+            return yt_dlp_file
 
         # Fallback to pytubefix
         print("Falling back to pytubefix...")
-        result = try_pytubefix_download(url, resolution)
-        if result:
-            return f"Download completed with pytubefix: {result}"
+        pytubefix_file = try_pytubefix_download(url, resolution)
+        if pytubefix_file:
+            return pytubefix_file
         else:
             print("Failed to download with both yt-dlp and pytubefix.")
             return None
@@ -113,6 +115,7 @@ def download_youtube_video(url, resolution="720"):
     except Exception as e:
         print(f"An unexpected error occurred: {str(e)}")
         return None
+
 
 
 if __name__ == "__main__":
