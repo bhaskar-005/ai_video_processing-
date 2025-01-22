@@ -17,28 +17,44 @@ def install_package(package):
         print(f"Failed to install {package}: {e}")
 
 def install_ffmpeg():
-    ffmpeg_url = "https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz"
-    ffmpeg_archive = "ffmpeg-release-amd64-static.tar.xz"
-    install_path = os.path.expanduser("~/ffmpeg")
+    # ffmpeg_url = "https://johnvansickle.com/ffmpeg/releases/ffmpeg-release-amd64-static.tar.xz"
+    # ffmpeg_archive = "ffmpeg-release-amd64-static.tar.xz"
+    # install_path = os.path.expanduser("~/ffmpeg")
 
     try:
         # Download FFmpeg
-        print(f"Downloading FFmpeg from {ffmpeg_url}...")
-        urllib.request.urlretrieve(ffmpeg_url, ffmpeg_archive)
+        # print(f"Downloading FFmpeg from {ffmpeg_url}...")
+        # urllib.request.urlretrieve(ffmpeg_url, ffmpeg_archive)
 
-        # Extract FFmpeg
-        print("Extracting FFmpeg...")
-        with tarfile.open(ffmpeg_archive, "r:xz") as tar:
-            # Use extractall with a filter function to suppress the warning
-            def no_filter(tarinfo):
-                # This function does nothing, effectively bypassing filtering
-                return tarinfo
-            tar.extractall(install_path, filter=no_filter)
+        # # Extract FFmpeg
+        # print("Extracting FFmpeg...")
+        # with tarfile.open(ffmpeg_archive, "r:xz") as tar:
+        #     # Use extractall with a filter function to suppress the warning
+        #     def no_filter(tarinfo):
+        #         # This function does nothing, effectively bypassing filtering
+        #         return tarinfo
+        #     tar.extractall(install_path, filter=no_filter)
 
-        # Locate the ffmpeg binary
-        ffmpeg_bin = os.path.join(install_path, os.listdir(install_path)[0], "ffmpeg")
-        os.environ["PATH"] += os.pathsep + os.path.dirname(ffmpeg_bin)
-        print(f"FFmpeg installed successfully at: {os.path.dirname(ffmpeg_bin)}")
+        # # Locate the ffmpeg binary
+        # ffmpeg_bin = os.path.join(install_path, os.listdir(install_path)[0], "ffmpeg")
+        # os.environ["PATH"] += os.pathsep + os.path.dirname(ffmpeg_bin)
+        # print(f"FFmpeg installed successfully at: {os.path.dirname(ffmpeg_bin)}")
+        os_name = platform.system()
+        if os_name == "Linux":
+            print("Installing ffmpeg on Linux...")
+            # Install system dependencies for OpenCV
+            subprocess.run(["sudo", "apt-get", "update"], check=True)
+            subprocess.run(["sudo", "apt-get", "install", "-y", "ffmpeg"], check=True)
+            subprocess.run(["ffmpeg", "-version"])
+
+        elif os_name == "Windows":
+            print("Windows detected. Please install ffmpeg manually or use a compatible method.")
+            # Add Windows-specific instructions if needed
+        elif os_name == "Darwin":
+            print("macOS detected. Skipping ffmpeg setup as it is not typically required.")
+        else:
+            print(f"Unsupported OS: {os_name}")
+        return True
 
     except Exception as e:
         print(f"Failed to install FFmpeg: {e}")
