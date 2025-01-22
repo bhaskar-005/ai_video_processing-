@@ -1,9 +1,3 @@
-from flask import Flask, jsonify, send_from_directory
-from Components.YoutubeDownloader import download_youtube_video
-from Components.Edit import extractAudio, crop_video
-from Components.Transcription import transcribeAudio
-from Components.LanguageTasks import GetHighlight
-from Components.FaceCrop import crop_to_vertical, combine_videos
 import os
 import urllib.request
 import tarfile
@@ -13,16 +7,6 @@ import logging
 import time
 import platform
 
-app = Flask(__name__)
-
-VIDEO_DIR = os.path.join(os.path.dirname(__file__), "videos")
-
-# Configure the logging system
-logging.basicConfig(
-    filename='app.log',       # Log file where we store the captured output
-    level=logging.INFO,       # Minimum level of logs to capture
-    format='%(asctime)s - %(levelname)s - %(message)s'  # Log format
-)
 
 def install_package(package):
     """Install a Python package using pip."""
@@ -98,6 +82,25 @@ setup_libgl()
 print("All dependencies are installed/updated!")
 
 print("test log store")
+
+
+from flask import Flask, jsonify, send_from_directory
+from Components.YoutubeDownloader import download_youtube_video
+from Components.Edit import extractAudio, crop_video
+from Components.Transcription import transcribeAudio
+from Components.LanguageTasks import GetHighlight
+from Components.FaceCrop import crop_to_vertical, combine_videos
+
+app = Flask(__name__)
+
+VIDEO_DIR = os.path.join(os.path.dirname(__file__), "videos")
+
+# Configure the logging system
+logging.basicConfig(
+    filename='app.log',       # Log file where we store the captured output
+    level=logging.INFO,       # Minimum level of logs to capture
+    format='%(asctime)s - %(levelname)s - %(message)s'  # Log format
+)
 
 class PrintCapture:
     def write(self, message):
