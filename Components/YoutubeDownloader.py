@@ -5,9 +5,11 @@ import subprocess
 import random
 import string
 import time
+import yt_dlp
+
 
 def generate_po_token():
-    """Generate PO token using the local function."""
+    """Generate a unique PO token."""
     try:
         timestamp = str(int(time.time()))
         random_str = ''.join(random.choices(string.ascii_letters + string.digits, k=10))
@@ -15,43 +17,59 @@ def generate_po_token():
     except Exception as e:
         print(f"Error generating token: {e}")
         return None
-def get_video_size(stream):
 
-    return stream.filesize / (1024 * 1024)
 
-def download_youtube_video(url, resolution):
+def try_ytdlp_download(url: str, resolution: str = "720"):
+    """Attempt to download a YouTube video using yt-dlp."""
+    try:
+        print("Attempting download with yt-dlp...")
+        ydl_opts = {
+            'format': f'bestvideo[height<={resolution}]+bestaudio/best[height<={resolution}]',
+            'outtmpl': 'videos/%(title)s.%(ext)s',
+            'merge_output_format': 'mp4',
+            'quiet': False,
+            'no_warnings': False,
+            'progress_hooks': [lambda d: print(
+                f"Downloading... {d.get('_percent_str', 'N/A')} at {d.get('_speed_str', 'N/A')}"
+            ) if d['status'] == 'downloading' else None]
+        }
+
+        with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+            print("Starting yt-dlp download...")
+            ydl.download([url])
+            print("yt-dlp download completed successfully!")
+            return True
+
+    except Exception as e:
+        print(f"yt-dlp download failed: {str(e)}")
+        return False
+
+
+def try_pytubefix_download(url: str, resolution: str):
+    """Fallback to downloading a YouTube video using pytubefix."""
     try:
         po_token = generate_po_token()
-        print(f"Generated PO token: {po_token}")
         if not po_token:
-            print("Failed to generate PO Token. Aborting...")
-            return
-        
-        helpers.token = po_token
+            print("Failed to generate PO token. Aborting...")
+            return None
 
+        helpers.token = po_token
         yt = YouTube(url, use_po_token=True)
-        print("----------------------") 
-        print(yt,"youtube data") 
-        print("----------------------") 
         
-        video_streams = yt.streams.filter(res=resolution, type="video").first()
+        video_stream = yt.streams.filter(res=resolution+"p", type="video").first()
         audio_stream = yt.streams.filter(only_audio=True).first()
 
-        if not video_streams:
+        if not video_stream:
             print(f"No video streams found with resolution {resolution}.")
-            return
+            return None
 
         if not os.path.exists('videos'):
             os.makedirs('videos')
 
         print(f"Downloading video: {yt.title}")
-        video_file = video_streams.download(output_path='videos', filename_prefix="video_")
-        print("----------------------") 
-        print(video_streams.is_progressive)
-        print("----------------------") 
-        print(video_streams)
-        print("----------------------") 
-        if not video_streams.is_progressive:
+        video_file = video_stream.download(output_path='videos', filename_prefix="video_")
+
+        if not video_stream.is_progressive:
             print("Downloading audio...")
             audio_file = audio_stream.download(output_path='videos', filename_prefix="audio_")
 
@@ -67,18 +85,37 @@ def download_youtube_video(url, resolution):
         else:
             output_file = video_file
 
-        
         print(f"Downloaded: {yt.title} to 'videos' folder")
         print(f"File path: {output_file}")
         return output_file
 
     except Exception as e:
         print(f"An error occurred: {str(e)}")
-        print("Please make sure you have the latest version of pytube and ffmpeg-python installed.")
-        print("You can update them by running:")
-        print("pip install --upgrade pytube ffmpeg-python")
-        print("Also, ensure that ffmpeg is installed on your system and available in your PATH.")
+        return None
+
+
+def download_youtube_video(url, resolution="720"):
+    """Main function to download a YouTube video, trying yt-dlp first, then pytubefix."""
+    try:
+        # Try downloading with yt-dlp
+        if try_ytdlp_download(url, resolution):
+            return "Download completed with yt-dlp"
+
+        # Fallback to pytubefix
+        print("Falling back to pytubefix...")
+        result = try_pytubefix_download(url, resolution)
+        if result:
+            return f"Download completed with pytubefix: {result}"
+        else:
+            print("Failed to download with both yt-dlp and pytubefix.")
+            return None
+
+    except Exception as e:
+        print(f"An unexpected error occurred: {str(e)}")
+        return None
+
 
 if __name__ == "__main__":
     youtube_url = input("Enter YouTube video URL: ")
-    download_youtube_video(youtube_url)
+    resolution = input("Enter desired resolution (e.g., 720): ") or "720"
+    download_youtube_video(youtube_url, resolution)

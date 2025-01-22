@@ -190,7 +190,7 @@ def health_check():
 @app.route('/process', methods=['GET'])
 def process_video():
     url = "https://www.youtube.com/watch?v=ABK0SYFxyEY&pp=ygUGM21pbiB2"
-    videoResolution = "360p"
+    videoResolution = "360"
     print(url)
     print("starting video download...")
     Vid = download_youtube_video(url, videoResolution)

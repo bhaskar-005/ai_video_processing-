@@ -12,5 +12,6 @@ pytube==15.0.0
 webrtcvad-wheels
 flask
 pydub
+yt_dlp
 openai==1.44.1
 --extra-index-url https://download.pytorch.org/whl/cu121
