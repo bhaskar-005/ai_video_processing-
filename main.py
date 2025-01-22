@@ -29,7 +29,11 @@ def install_ffmpeg():
         # Extract FFmpeg
         print("Extracting FFmpeg...")
         with tarfile.open(ffmpeg_archive, "r:xz") as tar:
-            tar.extractall(install_path)
+            # Use extractall with a filter function to suppress the warning
+            def no_filter(tarinfo):
+                # This function does nothing, effectively bypassing filtering
+                return tarinfo
+            tar.extractall(install_path, filter=no_filter)
 
         # Locate the ffmpeg binary
         ffmpeg_bin = os.path.join(install_path, os.listdir(install_path)[0], "ffmpeg")
@@ -39,6 +43,31 @@ def install_ffmpeg():
     except Exception as e:
         print(f"Failed to install FFmpeg: {e}")
 
+
+def install_opencv():
+    """Install OpenCV with necessary dependencies"""
+    try:
+        os_name = platform.system()
+        if os_name == "Linux":
+            print("Installing OpenCV on Linux...")
+            # Install system dependencies for OpenCV
+            subprocess.run(["sudo", "apt-get", "update"], check=True)
+            subprocess.run(["sudo", "apt-get", "install", "-y", "libopencv-dev", "python3-opencv"], check=True)
+
+            # Install Python dependencies
+            install_package("opencv-python-headless")  # Headless version of OpenCV
+        elif os_name == "Windows":
+            print("Windows detected. Please install OpenCV manually or use a compatible method.")
+            # Add Windows-specific instructions if needed
+        elif os_name == "Darwin":
+            print("macOS detected. Skipping libGL setup as it is not typically required.")
+        else:
+            print(f"Unsupported OS: {os_name}")
+        return True
+    except Exception as e:
+        print(f"Error setting up OpenCV: {str(e)}")
+        return False
+    
 def setup_libgl():
     try:
         os_name = platform.system()
@@ -64,6 +93,7 @@ install_package("ffmpeg-python")
 # Install FFmpeg
 install_ffmpeg()
 setup_libgl()
+install_opencv()
 print("All dependencies are installed/updated!")
 
 print("test log store")
