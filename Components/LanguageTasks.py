@@ -69,7 +69,8 @@ def GetHighlight(Transcription):
 
         # Send POST request
         response = requests.post(url, headers=headers, json=payload)
-
+        print(response.text);
+        # print(response)
         # Handle non-200 responses
         if response.status_code != 200:
             print(f"API call failed with status code {response.status_code}: {response.text}")

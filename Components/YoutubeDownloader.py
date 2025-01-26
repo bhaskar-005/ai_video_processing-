@@ -1,4 +1,5 @@
 import os
+import urllib.request
 from pytubefix import YouTube, helpers
 import ffmpeg
 import subprocess
@@ -45,7 +46,23 @@ def try_ytdlp_download(url: str, resolution: str = "720"):
         print(f"yt-dlp download failed: {str(e)}")
         return False
 
-
+def download_custom_video(url: str, output_dir: str = "videos"):
+    """Download a hosted video (non-YouTube URL) using urllib."""
+    try:
+        if not os.path.exists(output_dir):
+            os.makedirs(output_dir)
+        
+        video_filename = os.path.basename(url)
+        output_file = os.path.join(output_dir, video_filename)
+        
+        print(f"Downloading hosted video from {url}...")
+        urllib.request.urlretrieve(url, output_file)
+        print(f"Hosted video downloaded and saved to: {output_file}")
+        return output_file
+    except Exception as e:
+        print(f"Failed to download hosted video: {e}")
+        return None
+    
 def try_pytubefix_download(url: str, resolution: str):
     """Fallback to downloading a YouTube video using pytubefix."""
     try:
@@ -94,22 +111,29 @@ def try_pytubefix_download(url: str, resolution: str):
         print(f"An error occurred: {str(e)}")
         return None
 
-
-def download_youtube_video(url, resolution="720"):
-    """Main function to download a YouTube video, trying yt-dlp first, then pytubefix."""
+def download_youtube_video(url, resolution="720", videoUrlType="CUSTOM_URL"):
+    """Main function to download a YouTube video or a custom hosted video."""
     try:
-        # Try downloading with yt-dlp
-        yt_dlp_file = try_ytdlp_download(url, resolution)
-        if yt_dlp_file:
-            return yt_dlp_file
+        if videoUrlType == "CUSTOM_URL":
+            # Download hosted (custom) video
+            return download_custom_video(url=url)
 
-        # Fallback to pytubefix
-        print("Falling back to pytubefix...")
-        pytubefix_file = try_pytubefix_download(url, resolution)
-        if pytubefix_file:
-            return pytubefix_file
+        elif videoUrlType == "YOUTUBE_URL":
+            # Try downloading with yt-dlp
+            yt_dlp_file = try_ytdlp_download(url, resolution)
+            if yt_dlp_file:
+                return yt_dlp_file
+
+            # Fallback to pytubefix
+            print("Falling back to pytubefix...")
+            pytubefix_file = try_pytubefix_download(url, resolution)
+            if pytubefix_file:
+                return pytubefix_file
+            else:
+                print("Failed to download with both yt-dlp and pytubefix.")
+                return None
         else:
-            print("Failed to download with both yt-dlp and pytubefix.")
+            print("Invalid videoUrlType specified. Please use 'CUSTOM_URL' or 'YOUTUBE_URL'.")
             return None
 
     except Exception as e:

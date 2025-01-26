@@ -205,11 +205,13 @@ def health_check():
 # Main logic
 @app.route('/process', methods=['GET'])
 def process_video():
-    url = "https://www.youtube.com/watch?v=ABK0SYFxyEY&pp=ygUGM21pbiB2"
+
+    vidoeUrlType = "CUSTOM_URL" 
+    videoUrl= "http://res.cloudinary.com/dcgkfql3l/video/upload/v1737891435/ybo0kxecbg3jqancog7q.mp4"
     videoResolution = "360"
-    print(url)
+    print(videoUrl)
     print("starting video download...")
-    Vid = download_youtube_video(url, videoResolution)
+    Vid = download_youtube_video(videoUrl, videoResolution, vidoeUrlType)
     print("donload status",Vid)
     if Vid:
         Vid = Vid.replace(".webm", ".mp4")
@@ -219,6 +221,7 @@ def process_video():
         if Audio:
             print(Audio)
             transcriptions = transcribeAudio(Audio)
+            print("__video Transcribe", transcriptions)
             if len(transcriptions) > 0:
                 TransText = ""
 
@@ -249,4 +252,4 @@ def process_video():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
-    # process_video()
+# process_video()
