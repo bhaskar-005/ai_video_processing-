@@ -1,0 +1,363 @@
+2025-03-29 21:54:10,550 - youtube-downloader - INFO - Starting YouTube audio downloader service
+2025-03-29 21:54:10,638 - werkzeug - WARNING -  * Debugger is active!
+2025-03-29 21:54:10,646 - werkzeug - INFO -  * Debugger PIN: 759-932-308
+2025-03-29 21:54:48,132 - werkzeug - INFO -  * Detected change in 'C:\\Users\\bhask\\Downloads\\AI-Youtube-Shorts-Generator-main\\AI-Youtube-Shorts-Generator-main\\main.py', reloading
+2025-03-29 21:54:49,990 - youtube-downloader - INFO - Starting YouTube audio downloader service
+2025-03-29 21:54:50,067 - werkzeug - WARNING -  * Debugger is active!
+2025-03-29 21:54:50,076 - werkzeug - INFO -  * Debugger PIN: 759-932-308
+2025-03-29 21:54:57,190 - werkzeug - INFO -  * Detected change in 'C:\\Users\\bhask\\Downloads\\AI-Youtube-Shorts-Generator-main\\AI-Youtube-Shorts-Generator-main\\main.py', reloading
+2025-03-29 21:54:58,076 - youtube-downloader - INFO - Starting YouTube audio downloader service
+2025-03-29 21:54:58,122 - werkzeug - WARNING -  * Debugger is active!
+2025-03-29 21:54:58,129 - werkzeug - INFO -  * Debugger PIN: 759-932-308
+2025-03-29 21:54:59,165 - werkzeug - INFO -  * Detected change in 'C:\\Users\\bhask\\Downloads\\AI-Youtube-Shorts-Generator-main\\AI-Youtube-Shorts-Generator-main\\main.py', reloading
+2025-03-29 21:55:00,357 - youtube-downloader - INFO - Starting YouTube audio downloader service
+2025-03-29 21:55:00,400 - werkzeug - WARNING -  * Debugger is active!
+2025-03-29 21:55:00,406 - werkzeug - INFO -  * Debugger PIN: 759-932-308
+2025-03-29 21:55:29,744 - werkzeug - INFO -  * Detected change in 'C:\\Users\\bhask\\Downloads\\AI-Youtube-Shorts-Generator-main\\AI-Youtube-Shorts-Generator-main\\main.py', reloading
+2025-03-29 21:55:30,614 - youtube-downloader - INFO - Starting YouTube audio downloader service
+2025-03-29 21:55:30,661 - werkzeug - WARNING -  * Debugger is active!
+2025-03-29 21:55:30,666 - werkzeug - INFO -  * Debugger PIN: 759-932-308
+2025-03-29 21:55:43,846 - werkzeug - INFO -  * Detected change in 'C:\\Users\\bhask\\Downloads\\AI-Youtube-Shorts-Generator-main\\AI-Youtube-Shorts-Generator-main\\main.py', reloading
+2025-03-29 21:58:24,393 - youtube-downloader - INFO - Starting YouTube audio downloader service
+2025-03-29 21:58:25,465 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.58.88:5000
+2025-03-29 21:58:25,466 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-29 21:58:25,469 - werkzeug - INFO -  * Restarting with stat
+2025-03-29 21:58:26,138 - youtube-downloader - INFO - Starting YouTube audio downloader service
+2025-03-29 21:58:26,180 - werkzeug - WARNING -  * Debugger is active!
+2025-03-29 21:58:26,191 - werkzeug - INFO -  * Debugger PIN: 759-932-308
+2025-03-29 21:58:39,254 - youtube-downloader - INFO - Received download request: {'youtube_url': 'https://www.youtube.com/watch?v=1aA1WGON49E'}
+2025-03-29 21:58:39,258 - youtube-downloader - INFO - Generated audio_id: 7f608cc3-77c5-4233-b7af-5200de256cfb for URL: https://www.youtube.com/watch?v=1aA1WGON49E
+2025-03-29 21:58:39,287 - youtube-downloader - INFO - Starting download task for audio_id: 7f608cc3-77c5-4233-b7af-5200de256cfb
+2025-03-29 21:58:39,287 - youtube-downloader - INFO - Started background download thread for 7f608cc3-77c5-4233-b7af-5200de256cfb
+2025-03-29 21:58:39,308 - youtube-downloader - INFO - Initializing YouTube object for URL: https://www.youtube.com/watch?v=1aA1WGON49E
+2025-03-29 21:58:39,314 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 21:58:39] "[35m[1mPOST /download-audio HTTP/1.1[0m" 202 -
+2025-03-29 21:58:39,316 - youtube-downloader - INFO - Fetching audio stream for 7f608cc3-77c5-4233-b7af-5200de256cfb
+2025-03-29 21:58:42,366 - youtube-downloader - ERROR - Error in download task for 7f608cc3-77c5-4233-b7af-5200de256cfb: HTTP Error 400: Bad Request
+2025-03-29 21:59:07,067 - werkzeug - INFO -  * Detected change in 'C:\\Users\\bhask\\Downloads\\AI-Youtube-Shorts-Generator-main\\AI-Youtube-Shorts-Generator-main\\main.py', reloading
+2025-03-29 21:59:07,164 - werkzeug - INFO -  * Restarting with stat
+2025-03-29 21:59:08,215 - youtube-downloader - INFO - Starting YouTube audio downloader service
+2025-03-29 21:59:08,360 - werkzeug - WARNING -  * Debugger is active!
+2025-03-29 21:59:08,372 - werkzeug - INFO -  * Debugger PIN: 759-932-308
+2025-03-29 21:59:13,843 - youtube-downloader - INFO - Received download request: {'youtube_url': 'https://www.youtube.com/watch?v=1aA1WGON49E'}
+2025-03-29 21:59:13,844 - youtube-downloader - INFO - Generated audio_id: 1fa3a93e-bac1-4213-9fd9-26627a5e84a8 for URL: https://www.youtube.com/watch?v=1aA1WGON49E
+2025-03-29 21:59:13,852 - youtube-downloader - INFO - Starting download task for audio_id: 1fa3a93e-bac1-4213-9fd9-26627a5e84a8
+2025-03-29 21:59:13,854 - youtube-downloader - INFO - Started background download thread for 1fa3a93e-bac1-4213-9fd9-26627a5e84a8
+2025-03-29 21:59:13,855 - youtube-downloader - INFO - Initializing YouTube object for URL: https://www.youtube.com/watch?v=1aA1WGON49E
+2025-03-29 21:59:13,857 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 21:59:13] "[35m[1mPOST /download-audio HTTP/1.1[0m" 202 -
+2025-03-29 21:59:13,858 - youtube-downloader - INFO - Fetching audio stream for 1fa3a93e-bac1-4213-9fd9-26627a5e84a8
+2025-03-29 21:59:15,197 - youtube-downloader - INFO - Starting download of 'A one minute TEDx Talk for the digital age | Woody Roseland | TEDxMileHigh' for 1fa3a93e-bac1-4213-9fd9-26627a5e84a8
+2025-03-29 21:59:16,189 - youtube-downloader - INFO - Download progress for 1fa3a93e-bac1-4213-9fd9-26627a5e84a8: 100.0%
+2025-03-29 21:59:16,191 - youtube-downloader - INFO - Download completed to temp file: C:\Users\bhask\Downloads\AI-Youtube-Shorts-Generator-main\AI-Youtube-Shorts-Generator-main\audio_files\temp_1fa3a93e-bac1-4213-9fd9-26627a5e84a8_A one minute TEDx Talk for the digital age  Woody Roseland  TEDxMileHigh.m4a
+2025-03-29 21:59:16,193 - youtube-downloader - INFO - Converting file to MP3 for 1fa3a93e-bac1-4213-9fd9-26627a5e84a8
+2025-03-29 21:59:16,194 - youtube-downloader - INFO - Running ffmpeg conversion for 1fa3a93e-bac1-4213-9fd9-26627a5e84a8
+2025-03-29 21:59:20,309 - youtube-downloader - INFO - Removing temp file: C:\Users\bhask\Downloads\AI-Youtube-Shorts-Generator-main\AI-Youtube-Shorts-Generator-main\audio_files\temp_1fa3a93e-bac1-4213-9fd9-26627a5e84a8_A one minute TEDx Talk for the digital age  Woody Roseland  TEDxMileHigh.m4a
+2025-03-29 21:59:20,313 - youtube-downloader - INFO - Download and conversion completed for 1fa3a93e-bac1-4213-9fd9-26627a5e84a8
+2025-03-29 21:59:23,204 - youtube-downloader - INFO - Sending webhook notification for 1fa3a93e-bac1-4213-9fd9-26627a5e84a8
+2025-03-29 21:59:23,206 - youtube-downloader - INFO - yt data <pytubefix.__main__.YouTube object: videoId=1aA1WGON49E>
+2025-03-29 22:00:58,267 - werkzeug - INFO -  * Detected change in 'C:\\Users\\bhask\\Downloads\\AI-Youtube-Shorts-Generator-main\\AI-Youtube-Shorts-Generator-main\\main.py', reloading
+2025-03-29 22:00:58,394 - werkzeug - INFO -  * Restarting with stat
+2025-03-29 22:00:59,240 - youtube-downloader - INFO - Starting YouTube audio downloader service
+2025-03-29 22:00:59,310 - werkzeug - WARNING -  * Debugger is active!
+2025-03-29 22:00:59,321 - werkzeug - INFO -  * Debugger PIN: 759-932-308
+2025-03-29 22:01:00,380 - werkzeug - INFO -  * Detected change in 'C:\\Users\\bhask\\Downloads\\AI-Youtube-Shorts-Generator-main\\AI-Youtube-Shorts-Generator-main\\main.py', reloading
+2025-03-29 22:01:00,457 - werkzeug - INFO -  * Restarting with stat
+2025-03-29 22:01:15,709 - youtube-downloader - INFO - Starting YouTube audio downloader service
+2025-03-29 22:01:16,647 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.58.88:5000
+2025-03-29 22:01:16,648 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-29 22:01:16,653 - werkzeug - INFO -  * Restarting with stat
+2025-03-29 22:01:17,402 - youtube-downloader - INFO - Starting YouTube audio downloader service
+2025-03-29 22:01:17,461 - werkzeug - WARNING -  * Debugger is active!
+2025-03-29 22:01:17,465 - werkzeug - INFO -  * Debugger PIN: 759-932-308
+2025-03-29 22:01:22,222 - youtube-downloader - INFO - Received download request: {'youtube_url': 'https://www.youtube.com/watch?v=1aA1WGON49E'}
+2025-03-29 22:01:22,226 - youtube-downloader - INFO - Generated audio_id: e7d5c9e3-acfa-49b1-ab42-c442e670dfd3 for URL: https://www.youtube.com/watch?v=1aA1WGON49E
+2025-03-29 22:01:22,238 - youtube-downloader - INFO - Starting download task for audio_id: e7d5c9e3-acfa-49b1-ab42-c442e670dfd3
+2025-03-29 22:01:22,238 - youtube-downloader - INFO - Started background download thread for e7d5c9e3-acfa-49b1-ab42-c442e670dfd3
+2025-03-29 22:01:22,240 - youtube-downloader - INFO - Initializing YouTube object for URL: https://www.youtube.com/watch?v=1aA1WGON49E
+2025-03-29 22:01:22,241 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 22:01:22] "[35m[1mPOST /download-audio HTTP/1.1[0m" 202 -
+2025-03-29 22:01:22,241 - youtube-downloader - INFO - Fetching audio stream for e7d5c9e3-acfa-49b1-ab42-c442e670dfd3
+2025-03-29 22:01:23,566 - youtube-downloader - INFO - Starting download of 'A one minute TEDx Talk for the digital age | Woody Roseland | TEDxMileHigh' for e7d5c9e3-acfa-49b1-ab42-c442e670dfd3
+2025-03-29 22:01:24,465 - youtube-downloader - INFO - Download progress for e7d5c9e3-acfa-49b1-ab42-c442e670dfd3: 100.0%
+2025-03-29 22:01:24,470 - youtube-downloader - INFO - Download completed to temp file: C:\Users\bhask\Downloads\AI-Youtube-Shorts-Generator-main\AI-Youtube-Shorts-Generator-main\audio_files\temp_e7d5c9e3-acfa-49b1-ab42-c442e670dfd3_A one minute TEDx Talk for the digital age  Woody Roseland  TEDxMileHigh.m4a
+2025-03-29 22:01:24,471 - youtube-downloader - INFO - Converting file to MP3 for e7d5c9e3-acfa-49b1-ab42-c442e670dfd3
+2025-03-29 22:01:24,471 - youtube-downloader - INFO - Running ffmpeg conversion for e7d5c9e3-acfa-49b1-ab42-c442e670dfd3
+2025-03-29 22:01:26,892 - youtube-downloader - INFO - Removing temp file: C:\Users\bhask\Downloads\AI-Youtube-Shorts-Generator-main\AI-Youtube-Shorts-Generator-main\audio_files\temp_e7d5c9e3-acfa-49b1-ab42-c442e670dfd3_A one minute TEDx Talk for the digital age  Woody Roseland  TEDxMileHigh.m4a
+2025-03-29 22:01:26,895 - youtube-downloader - INFO - Download and conversion completed for e7d5c9e3-acfa-49b1-ab42-c442e670dfd3
+2025-03-29 22:01:29,156 - youtube-downloader - INFO - Sending webhook notification for e7d5c9e3-acfa-49b1-ab42-c442e670dfd3
+2025-03-29 22:01:29,158 - youtube-downloader - INFO - yt data <pytubefix.__main__.YouTube object: videoId=1aA1WGON49E>
+2025-03-29 22:01:29,171 - youtube-downloader - ERROR - Failed to send webhook: Object of type YouTube is not JSON serializable
+2025-03-29 22:01:40,623 - youtube-downloader - INFO - Received download request: {'youtube_url': 'https://www.youtube.com/watch?v=1aA1WGON49E'}
+2025-03-29 22:01:40,624 - youtube-downloader - INFO - Generated audio_id: aaa92995-4da0-47f6-9908-108def5336a5 for URL: https://www.youtube.com/watch?v=1aA1WGON49E
+2025-03-29 22:01:40,625 - youtube-downloader - INFO - Starting download task for audio_id: aaa92995-4da0-47f6-9908-108def5336a5
+2025-03-29 22:01:40,625 - youtube-downloader - INFO - Started background download thread for aaa92995-4da0-47f6-9908-108def5336a5
+2025-03-29 22:01:40,627 - youtube-downloader - INFO - Initializing YouTube object for URL: https://www.youtube.com/watch?v=1aA1WGON49E
+2025-03-29 22:01:40,628 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 22:01:40] "[35m[1mPOST /download-audio HTTP/1.1[0m" 202 -
+2025-03-29 22:01:40,630 - youtube-downloader - INFO - Fetching audio stream for aaa92995-4da0-47f6-9908-108def5336a5
+2025-03-29 22:01:42,209 - youtube-downloader - INFO - Starting download of 'A one minute TEDx Talk for the digital age | Woody Roseland | TEDxMileHigh' for aaa92995-4da0-47f6-9908-108def5336a5
+2025-03-29 22:01:43,632 - youtube-downloader - INFO - Download progress for aaa92995-4da0-47f6-9908-108def5336a5: 100.0%
+2025-03-29 22:01:43,637 - youtube-downloader - INFO - Download completed to temp file: C:\Users\bhask\Downloads\AI-Youtube-Shorts-Generator-main\AI-Youtube-Shorts-Generator-main\audio_files\temp_aaa92995-4da0-47f6-9908-108def5336a5_A one minute TEDx Talk for the digital age  Woody Roseland  TEDxMileHigh.m4a
+2025-03-29 22:01:43,638 - youtube-downloader - INFO - Converting file to MP3 for aaa92995-4da0-47f6-9908-108def5336a5
+2025-03-29 22:01:43,639 - youtube-downloader - INFO - Running ffmpeg conversion for aaa92995-4da0-47f6-9908-108def5336a5
+2025-03-29 22:01:46,593 - youtube-downloader - INFO - Removing temp file: C:\Users\bhask\Downloads\AI-Youtube-Shorts-Generator-main\AI-Youtube-Shorts-Generator-main\audio_files\temp_aaa92995-4da0-47f6-9908-108def5336a5_A one minute TEDx Talk for the digital age  Woody Roseland  TEDxMileHigh.m4a
+2025-03-29 22:01:46,597 - youtube-downloader - INFO - Download and conversion completed for aaa92995-4da0-47f6-9908-108def5336a5
+2025-03-29 22:01:48,281 - youtube-downloader - INFO - Sending webhook notification for aaa92995-4da0-47f6-9908-108def5336a5
+2025-03-29 22:01:48,282 - youtube-downloader - INFO - yt data <pytubefix.__main__.YouTube object: videoId=1aA1WGON49E>
+2025-03-29 22:01:48,283 - youtube-downloader - ERROR - Failed to send webhook: Object of type YouTube is not JSON serializable
+2025-03-29 22:04:18,462 - werkzeug - INFO -  * Detected change in 'C:\\Users\\bhask\\Downloads\\AI-Youtube-Shorts-Generator-main\\AI-Youtube-Shorts-Generator-main\\main.py', reloading
+2025-03-29 22:04:18,573 - werkzeug - INFO -  * Restarting with stat
+2025-03-29 22:04:19,372 - youtube-downloader - INFO - Starting YouTube audio downloader service
+2025-03-29 22:04:19,453 - werkzeug - WARNING -  * Debugger is active!
+2025-03-29 22:04:19,464 - werkzeug - INFO -  * Debugger PIN: 759-932-308
+2025-03-29 22:05:45,833 - werkzeug - INFO -  * Detected change in 'C:\\Users\\bhask\\Downloads\\AI-Youtube-Shorts-Generator-main\\AI-Youtube-Shorts-Generator-main\\main.py', reloading
+2025-03-29 22:05:46,005 - werkzeug - INFO -  * Restarting with stat
+2025-03-29 22:05:46,761 - youtube-downloader - INFO - Starting YouTube audio downloader service
+2025-03-29 22:05:46,896 - werkzeug - WARNING -  * Debugger is active!
+2025-03-29 22:05:46,902 - werkzeug - INFO -  * Debugger PIN: 759-932-308
+2025-03-29 22:05:48,980 - werkzeug - INFO -  * Detected change in 'C:\\Users\\bhask\\Downloads\\AI-Youtube-Shorts-Generator-main\\AI-Youtube-Shorts-Generator-main\\main.py', reloading
+2025-03-29 22:05:49,129 - werkzeug - INFO -  * Restarting with stat
+2025-03-29 22:05:50,150 - youtube-downloader - INFO - Starting YouTube audio downloader service
+2025-03-29 22:05:50,203 - werkzeug - WARNING -  * Debugger is active!
+2025-03-29 22:05:50,212 - werkzeug - INFO -  * Debugger PIN: 759-932-308
+2025-03-29 22:05:53,290 - werkzeug - INFO -  * Detected change in 'C:\\Users\\bhask\\Downloads\\AI-Youtube-Shorts-Generator-main\\AI-Youtube-Shorts-Generator-main\\main.py', reloading
+2025-03-29 22:05:53,417 - werkzeug - INFO -  * Restarting with stat
+2025-03-29 22:05:54,143 - youtube-downloader - INFO - Starting YouTube audio downloader service
+2025-03-29 22:05:54,242 - werkzeug - WARNING -  * Debugger is active!
+2025-03-29 22:05:54,255 - werkzeug - INFO -  * Debugger PIN: 759-932-308
+2025-03-29 22:06:02,120 - youtube-downloader - INFO - Received download request: {'youtube_url': 'https://www.youtube.com/watch?v=1aA1WGON49E'}
+2025-03-29 22:06:02,156 - youtube-downloader - INFO - Generated audio_id: a367bd44-0978-4ed4-82dc-80dd24007048 for URL: https://www.youtube.com/watch?v=1aA1WGON49E
+2025-03-29 22:06:02,166 - youtube-downloader - INFO - Starting download task for audio_id: a367bd44-0978-4ed4-82dc-80dd24007048
+2025-03-29 22:06:02,166 - youtube-downloader - INFO - Started background download thread for a367bd44-0978-4ed4-82dc-80dd24007048
+2025-03-29 22:06:02,166 - youtube-downloader - INFO - Initializing YouTube object for URL: https://www.youtube.com/watch?v=1aA1WGON49E
+2025-03-29 22:06:02,168 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 22:06:02] "[35m[1mPOST /download-audio HTTP/1.1[0m" 202 -
+2025-03-29 22:06:02,169 - youtube-downloader - INFO - Fetching audio stream for a367bd44-0978-4ed4-82dc-80dd24007048
+2025-03-29 22:06:03,507 - youtube-downloader - INFO - Starting download of 'A one minute TEDx Talk for the digital age | Woody Roseland | TEDxMileHigh' for a367bd44-0978-4ed4-82dc-80dd24007048
+2025-03-29 22:06:04,450 - youtube-downloader - INFO - Download progress for a367bd44-0978-4ed4-82dc-80dd24007048: 100.0%
+2025-03-29 22:06:04,458 - youtube-downloader - INFO - Download completed to temp file: C:\Users\bhask\Downloads\AI-Youtube-Shorts-Generator-main\AI-Youtube-Shorts-Generator-main\audio_files\temp_a367bd44-0978-4ed4-82dc-80dd24007048_A one minute TEDx Talk for the digital age  Woody Roseland  TEDxMileHigh.m4a
+2025-03-29 22:06:04,459 - youtube-downloader - INFO - Converting file to MP3 for a367bd44-0978-4ed4-82dc-80dd24007048
+2025-03-29 22:06:04,459 - youtube-downloader - INFO - Running ffmpeg conversion for a367bd44-0978-4ed4-82dc-80dd24007048
+2025-03-29 22:06:06,541 - youtube-downloader - INFO - Removing temp file: C:\Users\bhask\Downloads\AI-Youtube-Shorts-Generator-main\AI-Youtube-Shorts-Generator-main\audio_files\temp_a367bd44-0978-4ed4-82dc-80dd24007048_A one minute TEDx Talk for the digital age  Woody Roseland  TEDxMileHigh.m4a
+2025-03-29 22:06:06,544 - youtube-downloader - INFO - Download and conversion completed for a367bd44-0978-4ed4-82dc-80dd24007048
+2025-03-29 22:06:08,861 - youtube-downloader - INFO - Sending webhook notification for a367bd44-0978-4ed4-82dc-80dd24007048
+2025-03-29 22:06:08,863 - youtube-downloader - INFO - yt data <pytubefix.__main__.YouTube object: videoId=1aA1WGON49E>
+2025-03-29 22:06:08,876 - youtube-downloader - ERROR - Failed to send webhook: Object of type YouTube is not JSON serializable
+2025-03-29 22:06:49,040 - werkzeug - INFO -  * Detected change in 'C:\\Users\\bhask\\Downloads\\AI-Youtube-Shorts-Generator-main\\AI-Youtube-Shorts-Generator-main\\main.py', reloading
+2025-03-29 22:06:49,192 - werkzeug - INFO -  * Restarting with stat
+2025-03-29 22:06:50,249 - youtube-downloader - INFO - Starting YouTube audio downloader service
+2025-03-29 22:06:50,337 - werkzeug - WARNING -  * Debugger is active!
+2025-03-29 22:06:50,356 - werkzeug - INFO -  * Debugger PIN: 759-932-308
+2025-03-29 22:06:54,539 - werkzeug - INFO -  * Detected change in 'C:\\Users\\bhask\\Downloads\\AI-Youtube-Shorts-Generator-main\\AI-Youtube-Shorts-Generator-main\\main.py', reloading
+2025-03-29 22:06:54,648 - werkzeug - INFO -  * Restarting with stat
+2025-03-29 22:06:55,586 - youtube-downloader - INFO - Starting YouTube audio downloader service
+2025-03-29 22:06:55,622 - werkzeug - WARNING -  * Debugger is active!
+2025-03-29 22:06:55,627 - werkzeug - INFO -  * Debugger PIN: 759-932-308
+2025-03-29 22:07:11,930 - werkzeug - INFO -  * Detected change in 'C:\\Users\\bhask\\Downloads\\AI-Youtube-Shorts-Generator-main\\AI-Youtube-Shorts-Generator-main\\main.py', reloading
+2025-03-29 22:07:12,059 - werkzeug - INFO -  * Restarting with stat
+2025-03-29 22:07:12,743 - youtube-downloader - INFO - Starting YouTube audio downloader service
+2025-03-29 22:07:12,772 - werkzeug - WARNING -  * Debugger is active!
+2025-03-29 22:07:12,776 - werkzeug - INFO -  * Debugger PIN: 759-932-308
+2025-03-29 22:07:54,112 - youtube-downloader - INFO - Received download request: {'youtube_url': 'https://www.youtube.com/watch?v=1aA1WGON49E'}
+2025-03-29 22:07:54,113 - youtube-downloader - INFO - Generated audio_id: 844a56a2-ecfd-44ad-8759-16e8a8620fb2 for URL: https://www.youtube.com/watch?v=1aA1WGON49E
+2025-03-29 22:07:54,115 - youtube-downloader - INFO - Starting download task for audio_id: 844a56a2-ecfd-44ad-8759-16e8a8620fb2
+2025-03-29 22:07:54,117 - youtube-downloader - INFO - Started background download thread for 844a56a2-ecfd-44ad-8759-16e8a8620fb2
+2025-03-29 22:07:54,118 - youtube-downloader - INFO - Initializing YouTube object for URL: https://www.youtube.com/watch?v=1aA1WGON49E
+2025-03-29 22:07:54,124 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 22:07:54] "[35m[1mPOST /download-audio HTTP/1.1[0m" 202 -
+2025-03-29 22:07:54,129 - youtube-downloader - INFO - Fetching audio stream for 844a56a2-ecfd-44ad-8759-16e8a8620fb2
+2025-03-29 22:07:55,487 - youtube-downloader - INFO - Starting download of 'A one minute TEDx Talk for the digital age | Woody Roseland | TEDxMileHigh' for 844a56a2-ecfd-44ad-8759-16e8a8620fb2
+2025-03-29 22:07:56,570 - youtube-downloader - INFO - Download progress for 844a56a2-ecfd-44ad-8759-16e8a8620fb2: 100.0%
+2025-03-29 22:07:56,574 - youtube-downloader - INFO - Download completed to temp file: C:\Users\bhask\Downloads\AI-Youtube-Shorts-Generator-main\AI-Youtube-Shorts-Generator-main\audio_files\temp_844a56a2-ecfd-44ad-8759-16e8a8620fb2_A one minute TEDx Talk for the digital age  Woody Roseland  TEDxMileHigh.m4a
+2025-03-29 22:07:56,575 - youtube-downloader - INFO - Converting file to MP3 for 844a56a2-ecfd-44ad-8759-16e8a8620fb2
+2025-03-29 22:07:56,576 - youtube-downloader - INFO - Running ffmpeg conversion for 844a56a2-ecfd-44ad-8759-16e8a8620fb2
+2025-03-29 22:07:58,734 - youtube-downloader - INFO - Removing temp file: C:\Users\bhask\Downloads\AI-Youtube-Shorts-Generator-main\AI-Youtube-Shorts-Generator-main\audio_files\temp_844a56a2-ecfd-44ad-8759-16e8a8620fb2_A one minute TEDx Talk for the digital age  Woody Roseland  TEDxMileHigh.m4a
+2025-03-29 22:07:58,737 - youtube-downloader - INFO - Download and conversion completed for 844a56a2-ecfd-44ad-8759-16e8a8620fb2
+2025-03-29 22:08:02,137 - youtube-downloader - INFO - Sending webhook notification for 844a56a2-ecfd-44ad-8759-16e8a8620fb2
+2025-03-29 22:08:02,138 - youtube-downloader - INFO - yt data <pytubefix.__main__.YouTube object: videoId=1aA1WGON49E>
+2025-03-29 22:08:02,153 - youtube-downloader - ERROR - Failed to send webhook: Object of type YouTube is not JSON serializable
+2025-03-29 22:08:57,203 - werkzeug - INFO -  * Detected change in 'C:\\Users\\bhask\\Downloads\\AI-Youtube-Shorts-Generator-main\\AI-Youtube-Shorts-Generator-main\\main.py', reloading
+2025-03-29 22:08:57,327 - werkzeug - INFO -  * Restarting with stat
+2025-03-29 22:08:58,101 - youtube-downloader - INFO - Starting YouTube audio downloader service
+2025-03-29 22:08:58,130 - werkzeug - WARNING -  * Debugger is active!
+2025-03-29 22:08:58,135 - werkzeug - INFO -  * Debugger PIN: 759-932-308
+2025-03-29 22:08:59,164 - werkzeug - INFO -  * Detected change in 'C:\\Users\\bhask\\Downloads\\AI-Youtube-Shorts-Generator-main\\AI-Youtube-Shorts-Generator-main\\main.py', reloading
+2025-03-29 22:08:59,298 - werkzeug - INFO -  * Restarting with stat
+2025-03-29 22:09:00,061 - youtube-downloader - INFO - Starting YouTube audio downloader service
+2025-03-29 22:09:00,110 - werkzeug - WARNING -  * Debugger is active!
+2025-03-29 22:09:00,114 - werkzeug - INFO -  * Debugger PIN: 759-932-308
+2025-03-29 22:09:16,376 - werkzeug - INFO -  * Detected change in 'C:\\Users\\bhask\\Downloads\\AI-Youtube-Shorts-Generator-main\\AI-Youtube-Shorts-Generator-main\\main.py', reloading
+2025-03-29 22:09:16,483 - werkzeug - INFO -  * Restarting with stat
+2025-03-29 22:09:17,245 - youtube-downloader - INFO - Starting YouTube audio downloader service
+2025-03-29 22:09:17,283 - werkzeug - WARNING -  * Debugger is active!
+2025-03-29 22:09:17,290 - werkzeug - INFO -  * Debugger PIN: 759-932-308
+2025-03-29 22:09:20,361 - werkzeug - INFO -  * Detected change in 'C:\\Users\\bhask\\Downloads\\AI-Youtube-Shorts-Generator-main\\AI-Youtube-Shorts-Generator-main\\main.py', reloading
+2025-03-29 22:09:20,513 - werkzeug - INFO -  * Restarting with stat
+2025-03-29 22:09:21,472 - youtube-downloader - INFO - Starting YouTube audio downloader service
+2025-03-29 22:09:21,529 - werkzeug - WARNING -  * Debugger is active!
+2025-03-29 22:09:21,539 - werkzeug - INFO -  * Debugger PIN: 759-932-308
+2025-03-29 22:09:32,765 - werkzeug - INFO -  * Detected change in 'C:\\Users\\bhask\\Downloads\\AI-Youtube-Shorts-Generator-main\\AI-Youtube-Shorts-Generator-main\\main.py', reloading
+2025-03-29 22:09:32,872 - werkzeug - INFO -  * Restarting with stat
+2025-03-29 22:09:33,631 - youtube-downloader - INFO - Starting YouTube audio downloader service
+2025-03-29 22:09:33,697 - werkzeug - WARNING -  * Debugger is active!
+2025-03-29 22:09:33,703 - werkzeug - INFO -  * Debugger PIN: 759-932-308
+2025-03-29 22:09:48,883 - werkzeug - INFO -  * Detected change in 'C:\\Users\\bhask\\Downloads\\AI-Youtube-Shorts-Generator-main\\AI-Youtube-Shorts-Generator-main\\main.py', reloading
+2025-03-29 22:09:48,977 - werkzeug - INFO -  * Restarting with stat
+2025-03-29 22:09:50,022 - youtube-downloader - INFO - Starting YouTube audio downloader service
+2025-03-29 22:09:50,084 - werkzeug - WARNING -  * Debugger is active!
+2025-03-29 22:09:50,094 - werkzeug - INFO -  * Debugger PIN: 759-932-308
+2025-03-29 22:10:09,410 - youtube-downloader - INFO - Received download request: {'youtube_url': 'https://www.youtube.com/watch?v=1aA1WGON49E'}
+2025-03-29 22:10:09,464 - youtube-downloader - INFO - Generated audio_id: f4ed912e-73d9-42f2-ab42-d4da021ab70a for URL: https://www.youtube.com/watch?v=1aA1WGON49E
+2025-03-29 22:10:09,539 - youtube-downloader - INFO - Starting download task for audio_id: f4ed912e-73d9-42f2-ab42-d4da021ab70a
+2025-03-29 22:10:09,540 - youtube-downloader - INFO - Started background download thread for f4ed912e-73d9-42f2-ab42-d4da021ab70a
+2025-03-29 22:10:09,543 - youtube-downloader - INFO - Initializing YouTube object for URL: https://www.youtube.com/watch?v=1aA1WGON49E
+2025-03-29 22:10:09,556 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 22:10:09] "[35m[1mPOST /download-audio HTTP/1.1[0m" 202 -
+2025-03-29 22:10:09,559 - youtube-downloader - INFO - Fetching audio stream for f4ed912e-73d9-42f2-ab42-d4da021ab70a
+2025-03-29 22:10:11,030 - youtube-downloader - INFO - Starting download of 'A one minute TEDx Talk for the digital age | Woody Roseland | TEDxMileHigh' for f4ed912e-73d9-42f2-ab42-d4da021ab70a
+2025-03-29 22:10:12,734 - youtube-downloader - INFO - Download progress for f4ed912e-73d9-42f2-ab42-d4da021ab70a: 100.0%
+2025-03-29 22:10:12,739 - youtube-downloader - INFO - Download completed to temp file: C:\Users\bhask\Downloads\AI-Youtube-Shorts-Generator-main\AI-Youtube-Shorts-Generator-main\audio_files\temp_f4ed912e-73d9-42f2-ab42-d4da021ab70a_A one minute TEDx Talk for the digital age  Woody Roseland  TEDxMileHigh.m4a
+2025-03-29 22:10:12,741 - youtube-downloader - INFO - Converting file to MP3 for f4ed912e-73d9-42f2-ab42-d4da021ab70a
+2025-03-29 22:10:12,743 - youtube-downloader - INFO - Running ffmpeg conversion for f4ed912e-73d9-42f2-ab42-d4da021ab70a
+2025-03-29 22:10:15,414 - youtube-downloader - INFO - Removing temp file: C:\Users\bhask\Downloads\AI-Youtube-Shorts-Generator-main\AI-Youtube-Shorts-Generator-main\audio_files\temp_f4ed912e-73d9-42f2-ab42-d4da021ab70a_A one minute TEDx Talk for the digital age  Woody Roseland  TEDxMileHigh.m4a
+2025-03-29 22:10:15,417 - youtube-downloader - INFO - Download and conversion completed for f4ed912e-73d9-42f2-ab42-d4da021ab70a
+2025-03-29 22:10:15,888 - youtube-downloader - INFO - Sending webhook notification for f4ed912e-73d9-42f2-ab42-d4da021ab70a
+2025-03-29 22:10:15,889 - youtube-downloader - INFO - yt data <pytubefix.__main__.YouTube object: videoId=1aA1WGON49E>
+2025-03-29 22:10:15,900 - youtube-downloader - ERROR - Failed to send webhook: Object of type YouTube is not JSON serializable
+2025-03-29 22:14:02,611 - werkzeug - INFO -  * Detected change in 'C:\\Users\\bhask\\Downloads\\AI-Youtube-Shorts-Generator-main\\AI-Youtube-Shorts-Generator-main\\main.py', reloading
+2025-03-29 22:14:02,730 - werkzeug - INFO -  * Restarting with stat
+2025-03-29 22:14:03,667 - youtube-downloader - INFO - Starting YouTube audio downloader service
+2025-03-29 22:14:03,719 - werkzeug - WARNING -  * Debugger is active!
+2025-03-29 22:14:03,729 - werkzeug - INFO -  * Debugger PIN: 759-932-308
+2025-03-29 22:14:26,040 - werkzeug - INFO -  * Detected change in 'C:\\Users\\bhask\\Downloads\\AI-Youtube-Shorts-Generator-main\\AI-Youtube-Shorts-Generator-main\\main.py', reloading
+2025-03-29 22:14:26,240 - werkzeug - INFO -  * Restarting with stat
+2025-03-29 22:17:07,197 - youtube-downloader - INFO - Starting YouTube audio downloader service
+2025-03-29 22:17:08,161 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.58.88:5000
+2025-03-29 22:17:08,162 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-29 22:17:08,165 - werkzeug - INFO -  * Restarting with stat
+2025-03-29 22:17:09,472 - youtube-downloader - INFO - Starting YouTube audio downloader service
+2025-03-29 22:17:09,572 - werkzeug - WARNING -  * Debugger is active!
+2025-03-29 22:17:09,589 - werkzeug - INFO -  * Debugger PIN: 759-932-308
+2025-03-29 22:17:46,611 - youtube-downloader - INFO - Received download request: {'youtube_url': 'https://www.youtube.com/watch?v=1aA1WGON49E'}
+2025-03-29 22:17:46,642 - youtube-downloader - INFO - Generated audio_id: 70668ac0-1f5f-4336-a955-5fe72e29f933 for URL: https://www.youtube.com/watch?v=1aA1WGON49E
+2025-03-29 22:17:46,703 - youtube-downloader - INFO - Starting download task for audio_id: 70668ac0-1f5f-4336-a955-5fe72e29f933
+2025-03-29 22:17:46,703 - youtube-downloader - INFO - Started background download thread for 70668ac0-1f5f-4336-a955-5fe72e29f933
+2025-03-29 22:17:46,711 - youtube-downloader - INFO - Initializing YouTube object for URL: https://www.youtube.com/watch?v=1aA1WGON49E
+2025-03-29 22:17:46,713 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 22:17:46] "[35m[1mPOST /download-audio HTTP/1.1[0m" 202 -
+2025-03-29 22:17:46,714 - youtube-downloader - INFO - Fetching audio stream for 70668ac0-1f5f-4336-a955-5fe72e29f933
+2025-03-29 22:17:48,132 - youtube-downloader - INFO - Starting download of 'A one minute TEDx Talk for the digital age | Woody Roseland | TEDxMileHigh' for 70668ac0-1f5f-4336-a955-5fe72e29f933
+2025-03-29 22:17:49,496 - youtube-downloader - INFO - Download progress for 70668ac0-1f5f-4336-a955-5fe72e29f933: 100.0%
+2025-03-29 22:17:49,500 - youtube-downloader - INFO - Download completed to temp file: C:\Users\bhask\Downloads\AI-Youtube-Shorts-Generator-main\AI-Youtube-Shorts-Generator-main\audio_files\temp_70668ac0-1f5f-4336-a955-5fe72e29f933_A one minute TEDx Talk for the digital age  Woody Roseland  TEDxMileHigh.m4a
+2025-03-29 22:17:49,501 - youtube-downloader - INFO - Converting file to MP3 for 70668ac0-1f5f-4336-a955-5fe72e29f933
+2025-03-29 22:17:49,506 - youtube-downloader - INFO - Running ffmpeg conversion for 70668ac0-1f5f-4336-a955-5fe72e29f933
+2025-03-29 22:17:52,713 - youtube-downloader - INFO - Removing temp file: C:\Users\bhask\Downloads\AI-Youtube-Shorts-Generator-main\AI-Youtube-Shorts-Generator-main\audio_files\temp_70668ac0-1f5f-4336-a955-5fe72e29f933_A one minute TEDx Talk for the digital age  Woody Roseland  TEDxMileHigh.m4a
+2025-03-29 22:17:52,719 - youtube-downloader - INFO - Download and conversion completed for 70668ac0-1f5f-4336-a955-5fe72e29f933
+2025-03-29 22:17:54,668 - youtube-downloader - INFO - Sending webhook notification for 70668ac0-1f5f-4336-a955-5fe72e29f933
+2025-03-29 22:17:54,668 - youtube-downloader - INFO - yt data <pytubefix.__main__.YouTube object: videoId=1aA1WGON49E>
+2025-03-29 22:21:04,378 - werkzeug - INFO -  * Detected change in 'C:\\Users\\bhask\\Downloads\\AI-Youtube-Shorts-Generator-main\\AI-Youtube-Shorts-Generator-main\\main.py', reloading
+2025-03-29 22:21:04,729 - werkzeug - INFO -  * Restarting with stat
+2025-03-29 22:25:46,996 - youtube-downloader - INFO - Starting YouTube audio downloader service
+2025-03-29 22:25:47,986 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.58.88:5000
+2025-03-29 22:25:47,986 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-29 22:25:47,989 - werkzeug - INFO -  * Restarting with stat
+2025-03-29 22:25:48,839 - youtube-downloader - INFO - Starting YouTube audio downloader service
+2025-03-29 22:25:48,890 - werkzeug - WARNING -  * Debugger is active!
+2025-03-29 22:25:48,901 - werkzeug - INFO -  * Debugger PIN: 759-932-308
+2025-03-29 22:25:53,728 - youtube-downloader - INFO - Received download request: {'youtube_url': 'https://www.youtube.com/watch?v=1aA1WGON49E'}
+2025-03-29 22:25:53,731 - youtube-downloader - INFO - Generated audio_id: 49e17a7b-4a42-4a80-8fe8-69a94402781b for URL: https://www.youtube.com/watch?v=1aA1WGON49E
+2025-03-29 22:25:53,751 - youtube-downloader - INFO - Starting download task for audio_id: 49e17a7b-4a42-4a80-8fe8-69a94402781b
+2025-03-29 22:25:53,751 - youtube-downloader - INFO - Started background download thread for 49e17a7b-4a42-4a80-8fe8-69a94402781b
+2025-03-29 22:25:53,752 - youtube-downloader - INFO - Initializing YouTube object for URL: https://www.youtube.com/watch?v=1aA1WGON49E
+2025-03-29 22:25:53,754 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 22:25:53] "[35m[1mPOST /download-audio HTTP/1.1[0m" 202 -
+2025-03-29 22:25:53,755 - youtube-downloader - INFO - Fetching audio stream for 49e17a7b-4a42-4a80-8fe8-69a94402781b
+2025-03-29 22:25:55,130 - youtube-downloader - INFO - Starting download of 'A one minute TEDx Talk for the digital age | Woody Roseland | TEDxMileHigh' for 49e17a7b-4a42-4a80-8fe8-69a94402781b
+2025-03-29 22:25:56,620 - youtube-downloader - INFO - Download progress for 49e17a7b-4a42-4a80-8fe8-69a94402781b: 100.0%
+2025-03-29 22:25:56,624 - youtube-downloader - INFO - Download completed to temp file: C:\Users\bhask\Downloads\AI-Youtube-Shorts-Generator-main\AI-Youtube-Shorts-Generator-main\audio_files\temp_49e17a7b-4a42-4a80-8fe8-69a94402781b_A one minute TEDx Talk for the digital age  Woody Roseland  TEDxMileHigh.m4a
+2025-03-29 22:25:56,625 - youtube-downloader - INFO - Converting file to MP3 for 49e17a7b-4a42-4a80-8fe8-69a94402781b
+2025-03-29 22:25:56,626 - youtube-downloader - INFO - Running ffmpeg conversion for 49e17a7b-4a42-4a80-8fe8-69a94402781b
+2025-03-29 22:25:59,517 - youtube-downloader - INFO - Removing temp file: C:\Users\bhask\Downloads\AI-Youtube-Shorts-Generator-main\AI-Youtube-Shorts-Generator-main\audio_files\temp_49e17a7b-4a42-4a80-8fe8-69a94402781b_A one minute TEDx Talk for the digital age  Woody Roseland  TEDxMileHigh.m4a
+2025-03-29 22:25:59,520 - youtube-downloader - INFO - Download and conversion completed for 49e17a7b-4a42-4a80-8fe8-69a94402781b
+2025-03-29 22:26:01,901 - youtube-downloader - INFO - Sending webhook notification for 49e17a7b-4a42-4a80-8fe8-69a94402781b
+2025-03-29 22:26:01,901 - youtube-downloader - INFO - yt data <pytubefix.__main__.YouTube object: videoId=1aA1WGON49E>
+2025-03-29 22:26:01,985 - youtube-downloader - INFO - req sent.
+2025-03-29 22:29:12,379 - youtube-downloader - INFO - Received download request: {'youtube_url': 'https://www.youtube.com/watch?v=1aA1WGON49E'}
+2025-03-29 22:29:12,386 - youtube-downloader - INFO - Generated audio_id: dd05ea67-f3da-4355-85c3-0a45911739fa for URL: https://www.youtube.com/watch?v=1aA1WGON49E
+2025-03-29 22:29:12,392 - youtube-downloader - INFO - Starting download task for audio_id: dd05ea67-f3da-4355-85c3-0a45911739fa
+2025-03-29 22:29:12,392 - youtube-downloader - INFO - Started background download thread for dd05ea67-f3da-4355-85c3-0a45911739fa
+2025-03-29 22:29:12,401 - youtube-downloader - INFO - Initializing YouTube object for URL: https://www.youtube.com/watch?v=1aA1WGON49E
+2025-03-29 22:29:12,402 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 22:29:12] "[35m[1mPOST /download-audio HTTP/1.1[0m" 202 -
+2025-03-29 22:29:12,402 - youtube-downloader - INFO - Fetching audio stream for dd05ea67-f3da-4355-85c3-0a45911739fa
+2025-03-29 22:29:13,706 - youtube-downloader - INFO - Starting download of 'A one minute TEDx Talk for the digital age | Woody Roseland | TEDxMileHigh' for dd05ea67-f3da-4355-85c3-0a45911739fa
+2025-03-29 22:29:14,644 - youtube-downloader - INFO - Download progress for dd05ea67-f3da-4355-85c3-0a45911739fa: 100.0%
+2025-03-29 22:29:14,647 - youtube-downloader - INFO - Download completed to temp file: C:\Users\bhask\Downloads\AI-Youtube-Shorts-Generator-main\AI-Youtube-Shorts-Generator-main\audio_files\temp_dd05ea67-f3da-4355-85c3-0a45911739fa_A one minute TEDx Talk for the digital age  Woody Roseland  TEDxMileHigh.m4a
+2025-03-29 22:29:14,649 - youtube-downloader - INFO - Converting file to MP3 for dd05ea67-f3da-4355-85c3-0a45911739fa
+2025-03-29 22:29:14,650 - youtube-downloader - INFO - Running ffmpeg conversion for dd05ea67-f3da-4355-85c3-0a45911739fa
+2025-03-29 22:29:17,703 - youtube-downloader - INFO - Removing temp file: C:\Users\bhask\Downloads\AI-Youtube-Shorts-Generator-main\AI-Youtube-Shorts-Generator-main\audio_files\temp_dd05ea67-f3da-4355-85c3-0a45911739fa_A one minute TEDx Talk for the digital age  Woody Roseland  TEDxMileHigh.m4a
+2025-03-29 22:29:17,705 - youtube-downloader - INFO - Download and conversion completed for dd05ea67-f3da-4355-85c3-0a45911739fa
+2025-03-29 22:29:19,395 - youtube-downloader - INFO - Sending webhook notification for dd05ea67-f3da-4355-85c3-0a45911739fa
+2025-03-29 22:29:19,396 - youtube-downloader - INFO - yt data <pytubefix.__main__.YouTube object: videoId=1aA1WGON49E>
+2025-03-29 22:29:19,489 - youtube-downloader - INFO - req sent.
+2025-03-29 22:29:28,362 - youtube-downloader - INFO - Request to serve audio file: C:\Users\bhask\Downloads\AI-Youtube-Shorts-Generator-main\AI-Youtube-Shorts-Generator-main\audio_files\dd05ea67-f3da-4355-85c3-0a45911739fa.mp3
+2025-03-29 22:29:28,368 - youtube-downloader - INFO - Serving audio file: C:\Users\bhask\Downloads\AI-Youtube-Shorts-Generator-main\AI-Youtube-Shorts-Generator-main\audio_files\dd05ea67-f3da-4355-85c3-0a45911739fa.mp3
+2025-03-29 22:29:28,397 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 22:29:28] "GET /audio/dd05ea67-f3da-4355-85c3-0a45911739fa HTTP/1.1" 200 -
+2025-03-29 22:32:26,445 - youtube-downloader - INFO - Request to serve audio file: C:\Users\bhask\Downloads\AI-Youtube-Shorts-Generator-main\AI-Youtube-Shorts-Generator-main\audio_files\dd05ea67-f3da-4355-85c3-0a45911739fa.mp3
+2025-03-29 22:32:26,478 - youtube-downloader - INFO - Serving audio file: C:\Users\bhask\Downloads\AI-Youtube-Shorts-Generator-main\AI-Youtube-Shorts-Generator-main\audio_files\dd05ea67-f3da-4355-85c3-0a45911739fa.mp3
+2025-03-29 22:32:26,484 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 22:32:26] "GET /audio/dd05ea67-f3da-4355-85c3-0a45911739fa HTTP/1.1" 200 -
+2025-03-29 22:47:43,293 - youtube-downloader - INFO - Request to serve audio file: C:\Users\bhask\Downloads\AI-Youtube-Shorts-Generator-main\AI-Youtube-Shorts-Generator-main\audio_files\dd05ea67-f3da-4355-85c3-0a45911739fa.mp3
+2025-03-29 22:47:43,344 - youtube-downloader - INFO - Serving audio file: C:\Users\bhask\Downloads\AI-Youtube-Shorts-Generator-main\AI-Youtube-Shorts-Generator-main\audio_files\dd05ea67-f3da-4355-85c3-0a45911739fa.mp3
+2025-03-29 22:47:43,377 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 22:47:43] "GET /audio/dd05ea67-f3da-4355-85c3-0a45911739fa HTTP/1.1" 200 -
+2025-03-29 23:00:31,746 - youtube-downloader - INFO - Request to serve audio file: C:\Users\bhask\Downloads\AI-Youtube-Shorts-Generator-main\AI-Youtube-Shorts-Generator-main\audio_files\dd05ea67-f3da-4355-85c3-0a45911739fa.mp3
+2025-03-29 23:00:31,813 - youtube-downloader - INFO - Serving audio file: C:\Users\bhask\Downloads\AI-Youtube-Shorts-Generator-main\AI-Youtube-Shorts-Generator-main\audio_files\dd05ea67-f3da-4355-85c3-0a45911739fa.mp3
+2025-03-29 23:00:31,873 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 23:00:31] "GET /audio/dd05ea67-f3da-4355-85c3-0a45911739fa HTTP/1.1" 200 -
+2025-03-29 23:18:44,660 - youtube-downloader - INFO - Received download request: {'youtube_url': 'https://www.youtube.com/watch?v=1aA1WGON49E'}
+2025-03-29 23:18:44,709 - youtube-downloader - INFO - Generated audio_id: e2d45e7f-8987-41f0-b28f-1144180b7a67 for URL: https://www.youtube.com/watch?v=1aA1WGON49E
+2025-03-29 23:18:44,726 - youtube-downloader - INFO - Starting download task for audio_id: e2d45e7f-8987-41f0-b28f-1144180b7a67
+2025-03-29 23:18:44,726 - youtube-downloader - INFO - Started background download thread for e2d45e7f-8987-41f0-b28f-1144180b7a67
+2025-03-29 23:18:44,726 - youtube-downloader - INFO - Initializing YouTube object for URL: https://www.youtube.com/watch?v=1aA1WGON49E
+2025-03-29 23:18:44,746 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 23:18:44] "[35m[1mPOST /download-audio HTTP/1.1[0m" 202 -
+2025-03-29 23:18:44,754 - youtube-downloader - INFO - Fetching audio stream for e2d45e7f-8987-41f0-b28f-1144180b7a67
+2025-03-29 23:18:46,489 - youtube-downloader - INFO - Starting download of 'A one minute TEDx Talk for the digital age | Woody Roseland | TEDxMileHigh' for e2d45e7f-8987-41f0-b28f-1144180b7a67
+2025-03-29 23:18:47,946 - youtube-downloader - INFO - Download progress for e2d45e7f-8987-41f0-b28f-1144180b7a67: 100.0%
+2025-03-29 23:18:47,950 - youtube-downloader - INFO - Download completed to temp file: C:\Users\bhask\Downloads\AI-Youtube-Shorts-Generator-main\AI-Youtube-Shorts-Generator-main\audio_files\temp_e2d45e7f-8987-41f0-b28f-1144180b7a67_A one minute TEDx Talk for the digital age  Woody Roseland  TEDxMileHigh.m4a
+2025-03-29 23:18:47,952 - youtube-downloader - INFO - Converting file to MP3 for e2d45e7f-8987-41f0-b28f-1144180b7a67
+2025-03-29 23:18:47,954 - youtube-downloader - INFO - Running ffmpeg conversion for e2d45e7f-8987-41f0-b28f-1144180b7a67
+2025-03-29 23:18:50,675 - youtube-downloader - INFO - Removing temp file: C:\Users\bhask\Downloads\AI-Youtube-Shorts-Generator-main\AI-Youtube-Shorts-Generator-main\audio_files\temp_e2d45e7f-8987-41f0-b28f-1144180b7a67_A one minute TEDx Talk for the digital age  Woody Roseland  TEDxMileHigh.m4a
+2025-03-29 23:18:50,677 - youtube-downloader - INFO - Download and conversion completed for e2d45e7f-8987-41f0-b28f-1144180b7a67
+2025-03-29 23:18:52,772 - youtube-downloader - INFO - Sending webhook notification for e2d45e7f-8987-41f0-b28f-1144180b7a67
+2025-03-29 23:18:52,773 - youtube-downloader - INFO - yt data <pytubefix.__main__.YouTube object: videoId=1aA1WGON49E>
+2025-03-29 23:18:52,908 - youtube-downloader - INFO - req sent.
+2025-03-29 23:19:12,136 - youtube-downloader - INFO - Request to serve audio file: C:\Users\bhask\Downloads\AI-Youtube-Shorts-Generator-main\AI-Youtube-Shorts-Generator-main\audio_files\e2d45e7f-8987-41f0-b28f-1144180b7a67.mp3
+2025-03-29 23:19:12,137 - youtube-downloader - INFO - Serving audio file: C:\Users\bhask\Downloads\AI-Youtube-Shorts-Generator-main\AI-Youtube-Shorts-Generator-main\audio_files\e2d45e7f-8987-41f0-b28f-1144180b7a67.mp3
+2025-03-29 23:19:12,145 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 23:19:12] "GET /audio/e2d45e7f-8987-41f0-b28f-1144180b7a67 HTTP/1.1" 200 -
+2025-03-29 23:27:11,207 - youtube-downloader - INFO - Received download request: {'youtube_url': 'https://www.youtube.com/watch?v=H3lkRNAoV-s'}
+2025-03-29 23:27:11,241 - youtube-downloader - INFO - Generated audio_id: 6185497e-45e4-4f27-a7cc-0190c1e286bf for URL: https://www.youtube.com/watch?v=H3lkRNAoV-s
+2025-03-29 23:27:11,271 - youtube-downloader - INFO - Starting download task for audio_id: 6185497e-45e4-4f27-a7cc-0190c1e286bf
+2025-03-29 23:27:11,272 - youtube-downloader - INFO - Started background download thread for 6185497e-45e4-4f27-a7cc-0190c1e286bf
+2025-03-29 23:27:11,272 - youtube-downloader - INFO - Initializing YouTube object for URL: https://www.youtube.com/watch?v=H3lkRNAoV-s
+2025-03-29 23:27:11,309 - youtube-downloader - INFO - Fetching audio stream for 6185497e-45e4-4f27-a7cc-0190c1e286bf
+2025-03-29 23:27:11,311 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 23:27:11] "[35m[1mPOST /download-audio HTTP/1.1[0m" 202 -
+2025-03-29 23:27:13,065 - youtube-downloader - INFO - Starting download of 'Leave Your Past & Find New Path | Osho Hindi | Osho x Interstellar | Osho on Mind | Osho Spiritual' for 6185497e-45e4-4f27-a7cc-0190c1e286bf
+2025-03-29 23:27:17,385 - youtube-downloader - INFO - Download progress for 6185497e-45e4-4f27-a7cc-0190c1e286bf: 100.0%
+2025-03-29 23:27:17,389 - youtube-downloader - INFO - Download completed to temp file: C:\Users\bhask\Downloads\AI-Youtube-Shorts-Generator-main\AI-Youtube-Shorts-Generator-main\audio_files\temp_6185497e-45e4-4f27-a7cc-0190c1e286bf_Leave Your Past & Find New Path  Osho Hindi  Osho x Interstellar  Osho on Mind  Osho Spiritual.m4a
+2025-03-29 23:27:17,390 - youtube-downloader - INFO - Converting file to MP3 for 6185497e-45e4-4f27-a7cc-0190c1e286bf
+2025-03-29 23:27:17,390 - youtube-downloader - INFO - Running ffmpeg conversion for 6185497e-45e4-4f27-a7cc-0190c1e286bf
+2025-03-29 23:27:50,295 - youtube-downloader - INFO - Removing temp file: C:\Users\bhask\Downloads\AI-Youtube-Shorts-Generator-main\AI-Youtube-Shorts-Generator-main\audio_files\temp_6185497e-45e4-4f27-a7cc-0190c1e286bf_Leave Your Past & Find New Path  Osho Hindi  Osho x Interstellar  Osho on Mind  Osho Spiritual.m4a
+2025-03-29 23:27:50,296 - youtube-downloader - INFO - Download and conversion completed for 6185497e-45e4-4f27-a7cc-0190c1e286bf
+2025-03-29 23:27:52,093 - youtube-downloader - INFO - Sending webhook notification for 6185497e-45e4-4f27-a7cc-0190c1e286bf
+2025-03-29 23:27:52,093 - youtube-downloader - INFO - yt data <pytubefix.__main__.YouTube object: videoId=H3lkRNAoV-s>
+2025-03-29 23:27:52,193 - youtube-downloader - INFO - req sent.
+2025-03-29 23:28:15,352 - youtube-downloader - INFO - Request to serve audio file: C:\Users\bhask\Downloads\AI-Youtube-Shorts-Generator-main\AI-Youtube-Shorts-Generator-main\audio_files\6185497e-45e4-4f27-a7cc-0190c1e286bf.mp3
+2025-03-29 23:28:15,354 - youtube-downloader - INFO - Serving audio file: C:\Users\bhask\Downloads\AI-Youtube-Shorts-Generator-main\AI-Youtube-Shorts-Generator-main\audio_files\6185497e-45e4-4f27-a7cc-0190c1e286bf.mp3
+2025-03-29 23:28:15,366 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 23:28:15] "GET /audio/6185497e-45e4-4f27-a7cc-0190c1e286bf HTTP/1.1" 200 -
+2025-03-29 23:48:28,442 - youtube-downloader - INFO - Request to serve audio file: C:\Users\bhask\Downloads\AI-Youtube-Shorts-Generator-main\AI-Youtube-Shorts-Generator-main\audio_files\6185497e-45e4-4f27-a7cc-0190c1e286bf.mp3
+2025-03-29 23:48:28,536 - youtube-downloader - INFO - Serving audio file: C:\Users\bhask\Downloads\AI-Youtube-Shorts-Generator-main\AI-Youtube-Shorts-Generator-main\audio_files\6185497e-45e4-4f27-a7cc-0190c1e286bf.mp3
+2025-03-29 23:48:28,614 - werkzeug - INFO - 127.0.0.1 - - [29/Mar/2025 23:48:28] "GET /audio/6185497e-45e4-4f27-a7cc-0190c1e286bf HTTP/1.1" 200 -
+2025-03-30 00:03:17,315 - youtube-downloader - INFO - Request to serve audio file: C:\Users\bhask\Downloads\AI-Youtube-Shorts-Generator-main\AI-Youtube-Shorts-Generator-main\audio_files\6185497e-45e4-4f27-a7cc-0190c1e286bf.mp3
+2025-03-30 00:03:17,405 - youtube-downloader - INFO - Serving audio file: C:\Users\bhask\Downloads\AI-Youtube-Shorts-Generator-main\AI-Youtube-Shorts-Generator-main\audio_files\6185497e-45e4-4f27-a7cc-0190c1e286bf.mp3
+2025-03-30 00:03:17,445 - werkzeug - INFO - 127.0.0.1 - - [30/Mar/2025 00:03:17] "GET /audio/6185497e-45e4-4f27-a7cc-0190c1e286bf HTTP/1.1" 200 -

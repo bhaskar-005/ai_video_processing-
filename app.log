@@ -1,0 +1,277 @@
+2025-03-29 13:03:15,066 - INFO - b''
+2025-03-29 13:03:15,067 - INFO - b" * Serving Flask app 'main'\r\n"
+2025-03-29 13:03:15,067 - INFO - b' * Debug mode: off\r\n'
+2025-03-29 13:03:16,010 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.58.88:5000
+2025-03-29 13:03:16,011 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-29 13:05:10,572 - INFO - 127.0.0.1 - - [29/Mar/2025 13:05:10] "[31m[1mGET /download-audio HTTP/1.1[0m" 405 -
+2025-03-29 13:05:18,089 - INFO - 127.0.0.1 - - [29/Mar/2025 13:05:18] "[35m[1mPOST /download-audio HTTP/1.1[0m" 500 -
+2025-03-29 13:07:04,730 - INFO - b''
+2025-03-29 13:07:04,731 - INFO - b" * Serving Flask app 'main'\r\n"
+2025-03-29 13:07:04,731 - INFO - b' * Debug mode: off\r\n'
+2025-03-29 13:07:05,821 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.58.88:5000
+2025-03-29 13:07:05,821 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-29 13:07:07,339 - INFO - {'data': {'download-audio': 'https://www.youtube.com/watch?v=K62ya5r7UrM'}}
+2025-03-29 13:07:07,340 - INFO - 127.0.0.1 - - [29/Mar/2025 13:07:07] "[31m[1mPOST /download-audio HTTP/1.1[0m" 400 -
+2025-03-29 13:07:46,999 - INFO - {'data': {'youtube_url': 'https://www.youtube.com/watch?v=K62ya5r7UrM'}}
+2025-03-29 13:07:47,000 - INFO - 127.0.0.1 - - [29/Mar/2025 13:07:47] "[31m[1mPOST /download-audio HTTP/1.1[0m" 400 -
+2025-03-29 13:08:22,777 - INFO - b''
+2025-03-29 13:08:22,778 - INFO - b" * Serving Flask app 'main'\r\n"
+2025-03-29 13:08:22,778 - INFO - b' * Debug mode: off\r\n'
+2025-03-29 13:08:23,650 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.58.88:5000
+2025-03-29 13:08:23,650 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-29 13:08:34,465 - INFO - {'data': {'youtube_url': 'https://www.youtube.com/watch?v=K62ya5r7UrM'}}
+2025-03-29 13:08:34,465 - INFO - url
+2025-03-29 13:08:34,465 - INFO -  
+2025-03-29 13:08:34,466 - INFO - None
+2025-03-29 13:08:34,466 - INFO - 127.0.0.1 - - [29/Mar/2025 13:08:34] "[31m[1mPOST /download-audio HTTP/1.1[0m" 400 -
+2025-03-29 13:09:00,645 - INFO - {'youtube_url': 'https://www.youtube.com/watch?v=K62ya5r7UrM'}
+2025-03-29 13:09:00,647 - INFO - url
+2025-03-29 13:09:00,648 - INFO -  
+2025-03-29 13:09:00,649 - INFO - https://www.youtube.com/watch?v=K62ya5r7UrM
+2025-03-29 13:09:00,865 - INFO - Error generating PO Token:
+2025-03-29 13:09:00,865 - INFO -  
+2025-03-29 13:09:00,865 - INFO - python: can't open file 'C:\\Users\\bhask\\Downloads\\AI-Youtube-Shorts-Generator-main\\AI-Youtube-Shorts-Generator-main\\generate_token.py': [Errno 2] No such file or directory
+
+2025-03-29 13:09:00,866 - INFO - 127.0.0.1 - - [29/Mar/2025 13:09:00] "[35m[1mPOST /download-audio HTTP/1.1[0m" 500 -
+2025-03-29 13:09:48,819 - INFO - b''
+2025-03-29 13:09:48,820 - INFO - b" * Serving Flask app 'main'\r\n"
+2025-03-29 13:09:48,820 - INFO - b' * Debug mode: off\r\n'
+2025-03-29 13:09:49,798 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.58.88:5000
+2025-03-29 13:09:49,798 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-29 13:09:54,647 - INFO - {'youtube_url': 'https://www.youtube.com/watch?v=K62ya5r7UrM'}
+2025-03-29 13:09:54,647 - INFO - url
+2025-03-29 13:09:54,648 - INFO -  
+2025-03-29 13:09:54,648 - INFO - https://www.youtube.com/watch?v=K62ya5r7UrM
+2025-03-29 13:09:55,376 - INFO - 127.0.0.1 - - [29/Mar/2025 13:09:55] "[35m[1mPOST /download-audio HTTP/1.1[0m" 500 -
+2025-03-29 13:12:44,829 - INFO - b''
+2025-03-29 13:12:44,829 - INFO - b" * Serving Flask app 'main'\r\n"
+2025-03-29 13:12:44,829 - INFO - b' * Debug mode: off\r\n'
+2025-03-29 13:12:45,703 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.58.88:5000
+2025-03-29 13:12:45,703 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-29 13:12:49,288 - INFO - {'youtube_url': 'https://www.youtube.com/watch?v=K62ya5r7UrM'}
+2025-03-29 13:12:49,289 - INFO - url
+2025-03-29 13:12:49,289 - INFO -  
+2025-03-29 13:12:49,289 - INFO - https://www.youtube.com/watch?v=K62ya5r7UrM
+2025-03-29 13:12:56,929 - INFO - 127.0.0.1 - - [29/Mar/2025 13:12:56] "[35m[1mPOST /download-audio HTTP/1.1[0m" 500 -
+2025-03-29 13:16:44,617 - INFO - b''
+2025-03-29 13:16:44,618 - INFO - b" * Serving Flask app 'main'\r\n"
+2025-03-29 13:16:44,618 - INFO - b' * Debug mode: off\r\n'
+2025-03-29 13:16:45,498 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.58.88:5000
+2025-03-29 13:16:45,498 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-29 13:16:50,846 - INFO - {'youtube_url': 'https://www.youtube.com/watch?v=K62ya5r7UrM'}
+2025-03-29 13:16:50,847 - INFO - url
+2025-03-29 13:16:50,847 - INFO -  
+2025-03-29 13:16:50,847 - INFO - https://www.youtube.com/watch?v=K62ya5r7UrM
+2025-03-29 13:16:54,839 - INFO - Downloading audio: Osho Life Changing Stories  | Who Is Best Archer? | Osho Hindi Stories | Osho X Interstellar Music
+2025-03-29 13:18:03,940 - INFO - 127.0.0.1 - - [29/Mar/2025 13:18:03] "POST /download-audio HTTP/1.1" 200 -
+2025-03-29 13:18:35,141 - ERROR - Exception on /audio/e987d49b-8b64-4fc1-844a-453a5eacdeba [GET]
+Traceback (most recent call last):
+  File "C:\Users\bhask\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bhask\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bhask\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bhask\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bhask\Downloads\AI-Youtube-Shorts-Generator-main\AI-Youtube-Shorts-Generator-main\main.py", line 247, in serve_audio
+    return send_file(file_path, mimetype="audio/mpeg")
+           ^^^^^^^^^
+NameError: name 'send_file' is not defined
+2025-03-29 13:18:35,283 - INFO - 127.0.0.1 - - [29/Mar/2025 13:18:35] "[35m[1mGET /audio/e987d49b-8b64-4fc1-844a-453a5eacdeba HTTP/1.1[0m" 500 -
+2025-03-29 13:20:17,713 - ERROR - Exception on /audio/e987d49b-8b64-4fc1-844a-453a5eacdeba [GET]
+Traceback (most recent call last):
+  File "C:\Users\bhask\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bhask\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bhask\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bhask\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bhask\Downloads\AI-Youtube-Shorts-Generator-main\AI-Youtube-Shorts-Generator-main\main.py", line 247, in serve_audio
+    return send_file(file_path, mimetype="audio/mpeg")
+           ^^^^^^^^^
+NameError: name 'send_file' is not defined
+2025-03-29 13:20:17,717 - INFO - 127.0.0.1 - - [29/Mar/2025 13:20:17] "[35m[1mGET /audio/e987d49b-8b64-4fc1-844a-453a5eacdeba HTTP/1.1[0m" 500 -
+2025-03-29 13:20:23,247 - INFO - 127.0.0.1 - - [29/Mar/2025 13:20:23] "[31m[1mPOST /audio/e987d49b-8b64-4fc1-844a-453a5eacdeba HTTP/1.1[0m" 405 -
+2025-03-29 13:20:28,821 - ERROR - Exception on /audio/e987d49b-8b64-4fc1-844a-453a5eacdeba [GET]
+Traceback (most recent call last):
+  File "C:\Users\bhask\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bhask\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bhask\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bhask\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bhask\Downloads\AI-Youtube-Shorts-Generator-main\AI-Youtube-Shorts-Generator-main\main.py", line 247, in serve_audio
+    return send_file(file_path, mimetype="audio/mpeg")
+           ^^^^^^^^^
+NameError: name 'send_file' is not defined
+2025-03-29 13:20:28,823 - INFO - 127.0.0.1 - - [29/Mar/2025 13:20:28] "[35m[1mGET /audio/e987d49b-8b64-4fc1-844a-453a5eacdeba HTTP/1.1[0m" 500 -
+2025-03-29 13:20:58,344 - ERROR - Exception on /audio/e987d49b-8b64-4fc1-844a-453a5eacdeba [GET]
+Traceback (most recent call last):
+  File "C:\Users\bhask\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bhask\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bhask\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bhask\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bhask\Downloads\AI-Youtube-Shorts-Generator-main\AI-Youtube-Shorts-Generator-main\main.py", line 247, in serve_audio
+    return send_file(file_path, mimetype="audio/mpeg")
+           ^^^^^^^^^
+NameError: name 'send_file' is not defined
+2025-03-29 13:20:58,346 - INFO - 127.0.0.1 - - [29/Mar/2025 13:20:58] "[35m[1mGET /audio/e987d49b-8b64-4fc1-844a-453a5eacdeba HTTP/1.1[0m" 500 -
+2025-03-29 13:20:59,950 - INFO - 127.0.0.1 - - [29/Mar/2025 13:20:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-29 13:21:09,689 - ERROR - Exception on /audio/e987d49b-8b64-4fc1-844a-453a5eacdeba [GET]
+Traceback (most recent call last):
+  File "C:\Users\bhask\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bhask\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bhask\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bhask\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bhask\Downloads\AI-Youtube-Shorts-Generator-main\AI-Youtube-Shorts-Generator-main\main.py", line 247, in serve_audio
+    return send_file(file_path, mimetype="audio/mpeg")
+           ^^^^^^^^^
+NameError: name 'send_file' is not defined
+2025-03-29 13:21:09,693 - INFO - 127.0.0.1 - - [29/Mar/2025 13:21:09] "[35m[1mGET /audio/e987d49b-8b64-4fc1-844a-453a5eacdeba HTTP/1.1[0m" 500 -
+2025-03-29 13:22:29,969 - INFO - b''
+2025-03-29 13:22:29,971 - INFO - b" * Serving Flask app 'main'\r\n"
+2025-03-29 13:22:29,971 - INFO - b' * Debug mode: off\r\n'
+2025-03-29 13:22:30,856 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.58.88:5000
+2025-03-29 13:22:30,857 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-29 13:22:39,631 - ERROR - Exception on /audio/e987d49b-8b64-4fc1-844a-453a5eacdeba [GET]
+Traceback (most recent call last):
+  File "C:\Users\bhask\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bhask\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bhask\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bhask\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bhask\Downloads\AI-Youtube-Shorts-Generator-main\AI-Youtube-Shorts-Generator-main\main.py", line 247, in serve_audio
+    return send_file(file_path, mimetype="audio/mpeg")
+           ^^^^^^^^^
+NameError: name 'send_file' is not defined
+2025-03-29 13:22:39,634 - INFO - 127.0.0.1 - - [29/Mar/2025 13:22:39] "[35m[1mGET /audio/e987d49b-8b64-4fc1-844a-453a5eacdeba HTTP/1.1[0m" 500 -
+2025-03-29 13:23:11,133 - ERROR - Exception on /audio/e987d49b-8b64-4fc1-844a-453a5eacdeba [GET]
+Traceback (most recent call last):
+  File "C:\Users\bhask\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bhask\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bhask\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bhask\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bhask\Downloads\AI-Youtube-Shorts-Generator-main\AI-Youtube-Shorts-Generator-main\main.py", line 247, in serve_audio
+    return send_file(file_path, mimetype="audio/mpeg")
+           ^^^^^^^^^
+NameError: name 'send_file' is not defined
+2025-03-29 13:23:11,140 - INFO - 127.0.0.1 - - [29/Mar/2025 13:23:11] "[35m[1mGET /audio/e987d49b-8b64-4fc1-844a-453a5eacdeba HTTP/1.1[0m" 500 -
+2025-03-29 13:25:31,792 - INFO - b''
+2025-03-29 13:25:31,793 - INFO - b" * Serving Flask app 'main'\r\n"
+2025-03-29 13:25:31,793 - INFO - b' * Debug mode: off\r\n'
+2025-03-29 13:25:32,676 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.58.88:5000
+2025-03-29 13:25:32,676 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-29 13:25:42,348 - INFO - 127.0.0.1 - - [29/Mar/2025 13:25:42] "GET /audio/e987d49b-8b64-4fc1-844a-453a5eacdeba HTTP/1.1" 200 -
+2025-03-29 13:25:43,130 - INFO - 127.0.0.1 - - [29/Mar/2025 13:25:43] "[35m[1mGET /audio/e987d49b-8b64-4fc1-844a-453a5eacdeba HTTP/1.1[0m" 206 -
+2025-03-29 13:39:05,116 - INFO - {'youtube_url': 'https://www.youtube.com/watch?v=K62ya5r7UrM'}
+2025-03-29 13:39:05,123 - INFO - url
+2025-03-29 13:39:05,124 - INFO -  
+2025-03-29 13:39:05,127 - INFO - https://www.youtube.com/watch?v=K62ya5r7UrM
+2025-03-29 13:39:09,527 - INFO - Downloading audio: Osho Life Changing Stories  | Who Is Best Archer? | Osho Hindi Stories | Osho X Interstellar Music
+2025-03-29 13:40:43,994 - INFO - 127.0.0.1 - - [29/Mar/2025 13:40:43] "POST /download-audio HTTP/1.1" 200 -
+2025-03-29 13:41:07,275 - INFO - {'youtube_url': 'https://www.youtube.com/watch?v=K62ya5r7UrM'}
+2025-03-29 13:41:07,275 - INFO - url
+2025-03-29 13:41:07,275 - INFO -  
+2025-03-29 13:41:07,275 - INFO - https://www.youtube.com/watch?v=K62ya5r7UrM
+2025-03-29 13:41:12,339 - INFO - Downloading audio: Osho Life Changing Stories  | Who Is Best Archer? | Osho Hindi Stories | Osho X Interstellar Music
+2025-03-29 13:42:22,961 - INFO - 127.0.0.1 - - [29/Mar/2025 13:42:22] "POST /download-audio HTTP/1.1" 200 -
+2025-03-29 13:42:56,371 - INFO - 127.0.0.1 - - [29/Mar/2025 13:42:56] "GET /audio/f31f303a-0bf8-4714-919b-d98e76cc38f6 HTTP/1.1" 200 -
+2025-03-29 13:43:23,026 - INFO - 127.0.0.1 - - [29/Mar/2025 13:43:23] "GET /audio/f31f303a-0bf8-4714-919b-d98e76cc38f6 HTTP/1.1" 200 -
+2025-03-29 13:43:24,567 - INFO - 127.0.0.1 - - [29/Mar/2025 13:43:24] "[35m[1mGET /audio/f31f303a-0bf8-4714-919b-d98e76cc38f6 HTTP/1.1[0m" 206 -
+2025-03-29 13:50:09,637 - INFO - 127.0.0.1 - - [29/Mar/2025 13:50:09] "GET /audio/f31f303a-0bf8-4714-919b-d98e76cc38f6 HTTP/1.1" 200 -
+2025-03-29 17:44:12,954 - INFO - {'youtube_url': 'https://www.youtube.com/watch?v=1j8Q-PksC8A'}
+2025-03-29 17:44:12,970 - INFO - url
+2025-03-29 17:44:12,971 - INFO -  
+2025-03-29 17:44:12,977 - INFO - https://www.youtube.com/watch?v=1j8Q-PksC8A
+2025-03-29 17:44:15,179 - INFO - Downloading audio: 2 Mins Lord Krishna's Flute Music for RELAXATION | Krishna flute |flute music | krishna
+2025-03-29 17:44:26,954 - INFO - 127.0.0.1 - - [29/Mar/2025 17:44:26] "POST /download-audio HTTP/1.1" 200 -
+2025-03-29 17:45:24,650 - INFO - 127.0.0.1 - - [29/Mar/2025 17:45:24] "GET /audio/0e179c71-a574-4684-9893-3ba82b77329d HTTP/1.1" 200 -
+2025-03-29 18:18:00,462 - INFO - 127.0.0.1 - - [29/Mar/2025 18:18:00] "GET /audio/0e179c71-a574-4684-9893-3ba82b77329d HTTP/1.1" 200 -
+2025-03-29 18:31:35,923 - INFO - 127.0.0.1 - - [29/Mar/2025 18:31:35] "GET /audio/0e179c71-a574-4684-9893-3ba82b77329d HTTP/1.1" 200 -
+2025-03-29 18:34:05,683 - INFO - 127.0.0.1 - - [29/Mar/2025 18:34:05] "GET /audio/0e179c71-a574-4684-9893-3ba82b77329d HTTP/1.1" 200 -
+2025-03-29 18:39:49,293 - INFO - {'youtube_url': 'https://www.youtube.com/watch?v=1aA1WGON49E'}
+2025-03-29 18:39:49,296 - INFO - url
+2025-03-29 18:39:49,296 - INFO -  
+2025-03-29 18:39:49,296 - INFO - https://www.youtube.com/watch?v=1aA1WGON49E
+2025-03-29 18:39:50,848 - INFO - Downloading audio: A one minute TEDx Talk for the digital age | Woody Roseland | TEDxMileHigh
+2025-03-29 18:39:59,082 - INFO - 127.0.0.1 - - [29/Mar/2025 18:39:59] "POST /download-audio HTTP/1.1" 200 -
+2025-03-29 18:40:28,594 - INFO - 127.0.0.1 - - [29/Mar/2025 18:40:28] "GET /audio/b435a7f1-8e75-42e6-99a8-6bbff1e6d3d9 HTTP/1.1" 200 -
+2025-03-29 18:44:21,742 - INFO - {'youtube_url': 'https://www.youtube.com/watch?v=1aA1WGON49E'}
+2025-03-29 18:44:21,743 - INFO - url
+2025-03-29 18:44:21,743 - INFO -  
+2025-03-29 18:44:21,743 - INFO - https://www.youtube.com/watch?v=1aA1WGON49E
+2025-03-29 18:44:23,292 - INFO - Downloading audio: A one minute TEDx Talk for the digital age | Woody Roseland | TEDxMileHigh
+2025-03-29 18:44:27,528 - INFO - 127.0.0.1 - - [29/Mar/2025 18:44:27] "POST /download-audio HTTP/1.1" 200 -
+2025-03-29 18:45:00,886 - INFO - 127.0.0.1 - - [29/Mar/2025 18:45:00] "GET /audio/9a904b94-f498-4fda-97a6-01abc1a70253 HTTP/1.1" 200 -
