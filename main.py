@@ -137,6 +137,7 @@ def download_audio_task(youtube_url, audio_id):
 def download_audio():
     try:
         data = request.json
+        logger.info(f"Received API request at /download-audio with data: {request.json}")
         logger.info(f"Received download request: {data}")
         
         youtube_url = data.get('youtube_url')
@@ -176,6 +177,7 @@ def download_audio():
         logger.error(f"Error in download-audio endpoint: {str(e)}")
         return jsonify({"error": str(e)}), 500
 
+
 @app.route('/download-status/<audio_id>', methods=['GET'])
 def check_download_status(audio_id):
     logger.info(f"Status check for audio_id: {audio_id}")
@@ -206,4 +208,5 @@ def health_check():
 
 if __name__ == '__main__':
     logger.info("Starting YouTube audio downloader service")
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(debug=True, host='0.0.0.0', port=port)
