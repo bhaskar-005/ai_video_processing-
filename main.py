@@ -6,6 +6,7 @@ import logging
 from flask import Flask, request, jsonify, send_file
 from pytubefix import YouTube
 import ffmpeg
+from flask_cors import CORS
 
 # Configure logging
 logging.basicConfig(
@@ -207,6 +208,7 @@ def health_check():
     return jsonify({"status": "healthy", "active_downloads": len(download_status)}), 200
 
 if __name__ == '__main__':
+    CORS(app)
     logger.info("Starting YouTube audio downloader service")
     port = int(os.environ.get("PORT", 5000))
     app.run(debug=True, host='0.0.0.0', port=port)
