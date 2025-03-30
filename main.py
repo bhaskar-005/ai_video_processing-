@@ -95,7 +95,7 @@ def download_audio_task(youtube_url, audio_id):
         }
         
         # If webhook URL is configured, notify Node.js server
-        node_webhook_url = "https://yt-ubiquitous-octo-funicular-1.onrender.com/api/webhooks/audio-complete"
+        node_webhook_url = "https://yt-ubiquitous-octo-funicular-production.up.railway.app/api/webhooks/audio-complete"
         # node_webhook_url = os.environ.get('NODE_WEBHOOK_URL')
         metadata = {
                     "video_id": yt.video_id,
