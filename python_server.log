@@ -361,3 +361,13 @@
 2025-03-30 00:03:17,315 - youtube-downloader - INFO - Request to serve audio file: C:\Users\bhask\Downloads\AI-Youtube-Shorts-Generator-main\AI-Youtube-Shorts-Generator-main\audio_files\6185497e-45e4-4f27-a7cc-0190c1e286bf.mp3
 2025-03-30 00:03:17,405 - youtube-downloader - INFO - Serving audio file: C:\Users\bhask\Downloads\AI-Youtube-Shorts-Generator-main\AI-Youtube-Shorts-Generator-main\audio_files\6185497e-45e4-4f27-a7cc-0190c1e286bf.mp3
 2025-03-30 00:03:17,445 - werkzeug - INFO - 127.0.0.1 - - [30/Mar/2025 00:03:17] "GET /audio/6185497e-45e4-4f27-a7cc-0190c1e286bf HTTP/1.1" 200 -
+2025-03-30 16:43:05,303 - youtube-downloader - INFO - Starting YouTube audio downloader service
+2025-03-30 16:43:06,447 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.58.88:5000
+2025-03-30 16:43:06,448 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-30 16:43:06,451 - werkzeug - INFO -  * Restarting with stat
+2025-03-30 16:43:06,974 - youtube-downloader - INFO - Starting YouTube audio downloader service
+2025-03-30 16:43:07,019 - werkzeug - WARNING -  * Debugger is active!
+2025-03-30 16:43:07,035 - werkzeug - INFO -  * Debugger PIN: 759-932-308

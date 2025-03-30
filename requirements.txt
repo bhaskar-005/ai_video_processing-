@@ -1,8 +1,11 @@
+ffmpeg==1.4
+ffmpeg_python==0.2.0
 python-dotenv==1.0.1
 pytubefix
 torch
+pytube==15.0.0
+webrtcvad-wheels
 flask
 pydub
 yt_dlp
-openai==1.44.1
 --extra-index-url https://download.pytorch.org/whl/cu121
